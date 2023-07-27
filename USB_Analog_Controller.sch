@@ -1436,6 +1436,98 @@ package type OT</description>
 </deviceset>
 </devicesets>
 </library>
+<library name="M2M-Fuse">
+<packages>
+<package name="PTC-0ZCJ-1206">
+<description>&lt;h1&gt;Bel Fuse 0ZCJ Series&lt;/h1&gt;
+&lt;p&gt;Surface mount PTC, 1206 size&lt;/p&gt;
+&lt;a href="http://www.belfuse.com/pdfs/0ZCJ.pdf"&gt;Data sheet&lt;/a&gt;</description>
+<smd name="1" x="-1.5" y="0" dx="1" dy="1.8" layer="1" roundness="25"/>
+<smd name="2" x="1.5" y="0" dx="1" dy="1.8" layer="1" roundness="25"/>
+<wire x1="-0.9" y1="0.9" x2="0.9" y2="0.9" width="0.127" layer="21"/>
+<wire x1="-0.9" y1="-0.9" x2="0.9" y2="-0.9" width="0.127" layer="21"/>
+<text x="-2" y="1.2" size="1.016" layer="25">&gt;NAME</text>
+<text x="-2" y="-2.2" size="1.016" layer="27">&gt;VALUE</text>
+<rectangle x1="-2" y1="-1" x2="2" y2="1" layer="39"/>
+<text x="0" y="0" size="0.8128" layer="51" align="center">&gt;NAME</text>
+<wire x1="-1.75" y1="0.9" x2="-1" y2="0.9" width="0.127" layer="51"/>
+<wire x1="-1" y1="0.9" x2="1" y2="0.9" width="0.127" layer="51"/>
+<wire x1="1" y1="0.9" x2="1.75" y2="0.9" width="0.127" layer="51"/>
+<wire x1="1.75" y1="0.9" x2="1.75" y2="0.5" width="0.127" layer="51"/>
+<wire x1="-1.75" y1="0.9" x2="-1.75" y2="0.5" width="0.127" layer="51"/>
+<wire x1="-1.75" y1="-0.5" x2="-1.75" y2="-0.9" width="0.127" layer="51"/>
+<wire x1="-1.75" y1="-0.9" x2="-1" y2="-0.9" width="0.127" layer="51"/>
+<wire x1="-1" y1="-0.9" x2="1" y2="-0.9" width="0.127" layer="51"/>
+<wire x1="1" y1="-0.9" x2="1.75" y2="-0.9" width="0.127" layer="51"/>
+<wire x1="1.75" y1="-0.5" x2="1.75" y2="-0.9" width="0.127" layer="51"/>
+<wire x1="1.75" y1="0.5" x2="1.75" y2="-0.5" width="0.127" layer="51" curve="180"/>
+<wire x1="-1.75" y1="0.5" x2="-1.75" y2="-0.5" width="0.127" layer="51" curve="-180"/>
+<wire x1="-1" y1="0.9" x2="-1" y2="-0.9" width="0.127" layer="51"/>
+<wire x1="1" y1="0.9" x2="1" y2="-0.9" width="0.127" layer="51"/>
+</package>
+<package name="JK-SMD300">
+<smd name="A" x="-3.7" y="0" dx="2.3" dy="5.6" layer="1" roundness="20"/>
+<smd name="B" x="3.7" y="0" dx="2.3" dy="5.6" layer="1" roundness="20"/>
+<wire x1="-2" y1="3" x2="2" y2="3" width="0.127" layer="21"/>
+<wire x1="-2" y1="-3" x2="2" y2="-3" width="0.127" layer="21"/>
+<text x="-5" y="3.5" size="1.016" layer="25">&gt;NAME</text>
+<text x="-5" y="-4.5" size="1.016" layer="27">&gt;VALUE</text>
+<rectangle x1="-5.5" y1="-3.5" x2="5.5" y2="3.5" layer="39"/>
+<text x="0" y="0" size="1.016" layer="48" align="center">&gt;NAME</text>
+<wire x1="4" y1="2.5" x2="4" y2="-2.5" width="0.127" layer="48"/>
+<wire x1="4" y1="-2.5" x2="2.5" y2="-2.5" width="0.127" layer="48"/>
+<wire x1="2.5" y1="-2.5" x2="-2.5" y2="-2.5" width="0.127" layer="48"/>
+<wire x1="-2.5" y1="-2.5" x2="-4" y2="-2.5" width="0.127" layer="48"/>
+<wire x1="-4" y1="-2.5" x2="-4" y2="2.5" width="0.127" layer="48"/>
+<wire x1="-4" y1="2.5" x2="-2.5" y2="2.5" width="0.127" layer="48"/>
+<wire x1="-2.5" y1="2.5" x2="2.5" y2="2.5" width="0.127" layer="48"/>
+<wire x1="2.5" y1="2.5" x2="4" y2="2.5" width="0.127" layer="48"/>
+<wire x1="-2.5" y1="2.5" x2="-2.5" y2="-2.5" width="0.127" layer="48"/>
+<wire x1="2.5" y1="2.5" x2="2.5" y2="-2.5" width="0.127" layer="48"/>
+</package>
+</packages>
+<symbols>
+<symbol name="PTC">
+<pin name="1" x="-5.08" y="0" visible="off" length="short" swaplevel="1"/>
+<pin name="2" x="5.08" y="0" visible="off" length="short" swaplevel="1" rot="R180"/>
+<wire x1="-2.54" y1="1.016" x2="2.54" y2="1.016" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="-1.016" x2="2.54" y2="-1.016" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="1.016" x2="-2.54" y2="-1.016" width="0.254" layer="94"/>
+<wire x1="2.54" y1="1.016" x2="2.54" y2="-1.016" width="0.254" layer="94"/>
+<wire x1="2.54" y1="1.778" x2="1.524" y2="1.778" width="0.254" layer="94"/>
+<wire x1="1.524" y1="1.778" x2="-2.54" y2="-1.778" width="0.254" layer="94"/>
+<text x="-2.54" y="2.286" size="1.778" layer="95">&gt;NAME</text>
+<text x="-2.54" y="-4.064" size="1.778" layer="95">&gt;VALUE</text>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="PTC" prefix="F" uservalue="yes">
+<gates>
+<gate name="G$1" symbol="PTC" x="0" y="0"/>
+</gates>
+<devices>
+<device name="0ZCJ" package="PTC-0ZCJ-1206">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="JK-SMD300" package="JK-SMD300">
+<connects>
+<connect gate="G$1" pin="1" pad="A"/>
+<connect gate="G$1" pin="2" pad="B"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -1490,6 +1582,8 @@ package type OT</description>
 <part name="R6" library="M2M-Passives" deviceset="RESISTOR" device="0603" value="10K"/>
 <part name="SUPPLY9" library="M2M-Power" deviceset="VCC" device=""/>
 <part name="SUPPLY10" library="M2M-Power" deviceset="VCC" device=""/>
+<part name="F1" library="M2M-Fuse" deviceset="PTC" device="JK-SMD300" value="3A"/>
+<part name="F2" library="M2M-Fuse" deviceset="PTC" device="JK-SMD300" value="3A"/>
 </parts>
 <sheets>
 <sheet>
@@ -1615,11 +1709,11 @@ package type OT</description>
 <instance part="SUPPLY8" gate="G$1" x="71.12" y="154.94" smashed="yes">
 <attribute name="VALUE" x="71.12" y="157.734" size="1.778" layer="96" align="bottom-center"/>
 </instance>
-<instance part="SUPPLY3" gate="G$1" x="205.74" y="147.32" smashed="yes">
-<attribute name="VALUE" x="205.74" y="150.114" size="1.778" layer="96" align="bottom-center"/>
+<instance part="SUPPLY3" gate="G$1" x="193.04" y="147.32" smashed="yes">
+<attribute name="VALUE" x="193.04" y="150.114" size="1.778" layer="96" align="bottom-center"/>
 </instance>
-<instance part="SUPPLY4" gate="G$1" x="205.74" y="91.44" smashed="yes">
-<attribute name="VALUE" x="205.74" y="94.234" size="1.778" layer="96" align="bottom-center"/>
+<instance part="SUPPLY4" gate="G$1" x="193.04" y="91.44" smashed="yes">
+<attribute name="VALUE" x="193.04" y="94.234" size="1.778" layer="96" align="bottom-center"/>
 </instance>
 <instance part="SUPPLY5" gate="G$1" x="58.42" y="121.92" smashed="yes">
 <attribute name="VALUE" x="58.42" y="124.714" size="1.778" layer="96" align="bottom-center"/>
@@ -1651,6 +1745,14 @@ package type OT</description>
 </instance>
 <instance part="SUPPLY10" gate="G$1" x="66.04" y="73.66" smashed="yes">
 <attribute name="VALUE" x="66.04" y="76.454" size="1.778" layer="96" align="bottom-center"/>
+</instance>
+<instance part="F1" gate="G$1" x="200.66" y="142.24" smashed="yes">
+<attribute name="NAME" x="198.12" y="144.526" size="1.778" layer="95"/>
+<attribute name="VALUE" x="198.12" y="138.176" size="1.778" layer="95"/>
+</instance>
+<instance part="F2" gate="G$1" x="200.66" y="86.36" smashed="yes">
+<attribute name="NAME" x="198.12" y="88.646" size="1.778" layer="95"/>
+<attribute name="VALUE" x="198.12" y="82.296" size="1.778" layer="95"/>
 </instance>
 </instances>
 <busses>
@@ -2023,21 +2125,35 @@ package type OT</description>
 <junction x="33.02" y="149.86"/>
 </segment>
 <segment>
-<pinref part="X2" gate="G$1" pin="UVCC"/>
-<wire x1="208.28" y1="142.24" x2="205.74" y2="142.24" width="0.1524" layer="91"/>
-<wire x1="205.74" y1="142.24" x2="205.74" y2="147.32" width="0.1524" layer="91"/>
-<pinref part="SUPPLY3" gate="G$1" pin="VIN"/>
-</segment>
-<segment>
-<pinref part="X3" gate="G$1" pin="UVCC"/>
-<wire x1="208.28" y1="86.36" x2="205.74" y2="86.36" width="0.1524" layer="91"/>
-<wire x1="205.74" y1="86.36" x2="205.74" y2="91.44" width="0.1524" layer="91"/>
-<pinref part="SUPPLY4" gate="G$1" pin="VIN"/>
-</segment>
-<segment>
 <pinref part="C2" gate="G$1" pin="1"/>
 <wire x1="58.42" y1="121.92" x2="58.42" y2="116.84" width="0.1524" layer="91"/>
 <pinref part="SUPPLY5" gate="G$1" pin="VIN"/>
+</segment>
+<segment>
+<pinref part="SUPPLY3" gate="G$1" pin="VIN"/>
+<pinref part="F1" gate="G$1" pin="1"/>
+<wire x1="193.04" y1="147.32" x2="193.04" y2="142.24" width="0.1524" layer="91"/>
+<wire x1="193.04" y1="142.24" x2="195.58" y2="142.24" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="SUPPLY4" gate="G$1" pin="VIN"/>
+<pinref part="F2" gate="G$1" pin="1"/>
+<wire x1="193.04" y1="91.44" x2="193.04" y2="86.36" width="0.1524" layer="91"/>
+<wire x1="193.04" y1="86.36" x2="195.58" y2="86.36" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$5" class="0">
+<segment>
+<pinref part="X2" gate="G$1" pin="UVCC"/>
+<wire x1="208.28" y1="142.24" x2="205.74" y2="142.24" width="0.1524" layer="91"/>
+<pinref part="F1" gate="G$1" pin="2"/>
+</segment>
+</net>
+<net name="N$6" class="0">
+<segment>
+<pinref part="X3" gate="G$1" pin="UVCC"/>
+<wire x1="208.28" y1="86.36" x2="205.74" y2="86.36" width="0.1524" layer="91"/>
+<pinref part="F2" gate="G$1" pin="2"/>
 </segment>
 </net>
 </nets>
