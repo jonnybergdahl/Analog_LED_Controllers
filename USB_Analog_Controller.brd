@@ -3,7 +3,7 @@
 <eagle version="9.6.2">
 <drawing>
 <settings>
-<setting alwaysvectorfont="yes"/>
+<setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
 <grid distance="0.5" unitdist="mm" unit="mm" style="lines" multiple="1" display="no" altdistance="5" altunitdist="mil" altunit="mil"/>
@@ -42,7 +42,7 @@
 <layer number="44" name="Drills" color="7" fill="1" visible="no" active="yes"/>
 <layer number="45" name="Holes" color="7" fill="1" visible="no" active="yes"/>
 <layer number="46" name="Milling" color="3" fill="1" visible="no" active="yes"/>
-<layer number="47" name="Measures" color="7" fill="1" visible="no" active="yes"/>
+<layer number="47" name="Measures" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="48" name="Document" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="49" name="Reference" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="50" name="dxf" color="7" fill="1" visible="no" active="no"/>
@@ -173,9 +173,20 @@
 <wire x1="2" y1="36" x2="0" y2="34" width="0" layer="20" curve="90"/>
 <text x="48.5" y="6" size="1.27" layer="21" rot="R90">USB Analog
 Controller</text>
-<text x="48.5" y="20" size="1.016" layer="21" rot="R90">2023-07-17</text>
+<text x="48.5" y="20" size="1.016" layer="21" rot="R90">2023-07-27</text>
 <text x="44" y="12.5" size="1.27" layer="21" rot="R90">GND</text>
 <text x="44" y="7.5" size="1.27" layer="21" rot="R90">5V</text>
+<dimension x1="18" y1="18" x2="0" y2="18" x3="9" y3="-4.5" textsize="1.778" layer="47"/>
+<dimension x1="45" y1="18" x2="0" y2="18" x3="22.5" y3="-8.5" textsize="1.778" layer="47"/>
+<dimension x1="0" y1="0" x2="50" y2="0" x3="25" y3="-12.5" textsize="1.778" layer="47"/>
+<dimension x1="18" y1="18" x2="18" y2="0" x3="-6" y3="9" textsize="1.778" layer="47"/>
+<dimension x1="0" y1="0" x2="0" y2="36" x3="-13" y3="18" textsize="1.778" layer="47"/>
+<text x="54.5" y="20" size="1.778" layer="47">Mounting holes
+2x3mm</text>
+<dimension x1="10" y1="9" x2="10" y2="0" x3="-2.5" y3="4.5" textsize="1.778" layer="47"/>
+<dimension x1="10" y1="27" x2="10" y2="0" x3="-9.5" y3="13.5" textsize="1.778" layer="47"/>
+<dimension x1="48" y1="30.5" x2="48" y2="0" x3="53.5" y3="15.25" textsize="1.778" layer="47"/>
+<dimension x1="0" y1="34" x2="25.5" y2="34" x3="12.75" y3="38.5" textsize="1.778" layer="47"/>
 </plain>
 <libraries>
 <library name="M2M-Passives">
