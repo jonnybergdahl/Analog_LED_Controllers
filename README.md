@@ -1,6 +1,6 @@
 # LED_USB_Analog_Controller
 
-This is a two channel analog LED controller for 5V USB connected lights. It is based on a ESP32-PICO-MINI-2 module, and I use it with ESPHome firmware to publish the lights to Home Assistant.
+This is a two channel analog LED controller for 5V USB connected lights. It is based on a ESP32-PICO-MINI-2 module, and I use it with ESPHome firmware to publish the lights to Home Assistant. Inside of Home Assistant you dim the lights and turn them on or off.
 
 ![Device](assets/IMG_2712.jpeg)
 
@@ -34,7 +34,7 @@ In _EspHome_,  click `Install` - `Manual download` - `Modern format`. _EspHome_ 
 
 Open the [ESPHome programming page](https://web.esphome.io/) and click `CONNECT`. Select the FT232 serial port and click `Connect`. Select `Install` and then click `Select file`. Select the file downloaded in the previous step and then click `Install`. The install will now proceed.
 
-When install is finished, just remove the FT232 board and `BOOT` jumper, disconnect and connect power, and after a while Home Assistant will auto´detect it. Just add the device as usual and you will get a device with the following entities. 
+When install is finished, just remove the FT232 board and `BOOT` jumper, disconnect and connect power, and after a while Home Assistant will autodetect it. Just add the device as usual and you will get a device with the following entities in Home Assistant. 
 
 ![Home Assistant view](assets/hadevice.png)
 
