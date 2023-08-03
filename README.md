@@ -26,7 +26,9 @@ The enclosure is press fit so does not need any extra hardware or tools.
 
 Create a new device in _ESPHome_ and replace the `yaml` with the contents of [the yaml code here](firmware/led1.yaml). Change `name`and `friendly_name` as needed.
 
-The actual programming is done by using a standard FT232 serial board connected to the programming header. 
+The actual programming is done by using a standard FT232 serial board connected to the programming header. If you don't own a FT232 adapter, you can use other types of serial adapters by hooking up `GND`, `TX` and `RX` like this.
+
+![Serial connection](assets/serialhookup.png)
 
 Insert the programmer and short the `BOOT` header. It can be done by soldering a temporary lead between the pads (I just insert tweezers into the pads). Apply power and it is ready for programming.
 
