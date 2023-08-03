@@ -2,44 +2,44 @@ esphome:
     name: led1
     friendly_name: LED1
   
-  esp32:
-    board: esp32dev
-    framework:
-      type: arduino
-  
-  logger:
-  
-  api:
-    encryption:
-      key: !secret api_key
-  
-  ota:
-    password: !secret ota_password
-  
-  wifi:
-    ssid: !secret wifi_ssid
-    password: !secret wifi_password
-  
-    ap:
-      ssid: $friendly_name Fallback Hotspot
-      password: !secret ap_password
-  
-  captive_portal:
-  
-  output:
-    - platform: ledc
-      pin: GPIO32
-      id: pwm1
-      frequency: 2441Hz
-    - platform: ledc
-      pin: GPIO33
-      id: pwm2
-      frequency: 2441Hz
-  
-  light:
-    - platform: monochromatic
-      output: pwm1
-      name: "USB 1"
-    - platform: monochromatic
-      output: pwm2
-      name: "USB 2"    
+esp32:
+  board: esp32dev
+  framework:
+    type: arduino
+
+logger:
+
+api:
+  encryption:
+    key: !secret api_key
+
+ota:
+  password: !secret ota_password
+
+wifi:
+  ssid: !secret wifi_ssid
+  password: !secret wifi_password
+
+  ap:
+    ssid: $friendly_name Fallback Hotspot
+    password: !secret ap_password
+
+captive_portal:
+
+output:
+  - platform: ledc
+    pin: GPIO32
+    id: pwm1
+    frequency: 2441Hz
+  - platform: ledc
+    pin: GPIO33
+    id: pwm2
+    frequency: 2441Hz
+
+light:
+  - platform: monochromatic
+    output: pwm1
+    name: "USB 1"
+  - platform: monochromatic
+    output: pwm2
+    name: "USB 2"    
