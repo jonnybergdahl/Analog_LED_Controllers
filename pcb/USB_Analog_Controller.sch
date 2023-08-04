@@ -825,47 +825,49 @@ Switches electrical signals</description>
 <wire x1="-1.27" y1="-1.27" x2="-1.27" y2="1.27" width="0.127" layer="48"/>
 <text x="-1.016" y="-0.635" size="1.27" layer="48">&gt;NAME</text>
 </package>
-<package name="TERMINAL-5.08-2P">
-<pad name="P$1" x="-2.54" y="0" drill="2"/>
-<pad name="P$2" x="2.54" y="0" drill="2"/>
-<wire x1="-5.08" y1="5.5" x2="5.08" y2="5.5" width="0.127" layer="21"/>
-<wire x1="5.08" y1="5.5" x2="5.08" y2="-5.5" width="0.127" layer="21"/>
-<wire x1="5.08" y1="-5.5" x2="-5.08" y2="-5.5" width="0.127" layer="21"/>
-<wire x1="-5.08" y1="-5.5" x2="-5.08" y2="5.5" width="0.127" layer="21"/>
+<package name="TERMINAL-2.54-2P">
+<pad name="1" x="-1.27" y="0" drill="1" shape="square"/>
+<pad name="2" x="1.27" y="0" drill="1"/>
+<wire x1="-2.75" y1="3.5" x2="2.75" y2="3.5" width="0.127" layer="21"/>
+<wire x1="2.75" y1="3.5" x2="2.75" y2="2.5" width="0.127" layer="21"/>
+<wire x1="2.75" y1="2.5" x2="2.75" y2="-2.8" width="0.127" layer="21"/>
+<wire x1="2.75" y1="-2.8" x2="-2.75" y2="-2.8" width="0.127" layer="21"/>
+<wire x1="-2.75" y1="-2.8" x2="-2.75" y2="2.5" width="0.127" layer="21"/>
+<wire x1="-2.75" y1="2.5" x2="-2.75" y2="3.5" width="0.127" layer="21"/>
+<wire x1="-2.75" y1="2.5" x2="2.75" y2="2.5" width="0.127" layer="21"/>
+<text x="-3" y="4" size="1.016" layer="25">&gt;NAME</text>
+<text x="-3" y="-4" size="1.016" layer="27">&gt;VALUE</text>
+<rectangle x1="-3" y1="-3" x2="3" y2="4" layer="39"/>
+<wire x1="-2.8" y1="3.5" x2="2.8" y2="3.5" width="0.127" layer="51"/>
+<wire x1="2.8" y1="3.5" x2="2.8" y2="2.5" width="0.127" layer="51"/>
+<wire x1="2.8" y1="2.5" x2="2.8" y2="-2.8" width="0.127" layer="51"/>
+<wire x1="2.8" y1="-2.8" x2="-2.8" y2="-2.8" width="0.127" layer="51"/>
+<wire x1="-2.8" y1="-2.8" x2="-2.8" y2="2.5" width="0.127" layer="51"/>
+<wire x1="-2.8" y1="2.5" x2="-2.8" y2="3.5" width="0.127" layer="51"/>
+<wire x1="-2.8" y1="2.5" x2="2.8" y2="2.5" width="0.127" layer="51"/>
+<text x="0" y="0" size="1.016" layer="51" align="center">&gt;NAME</text>
 </package>
-<package name="TERMINAL-5.08-2P-NO-SILK">
-<pad name="P$1" x="-2.54" y="0" drill="2"/>
-<pad name="P$2" x="2.54" y="0" drill="2"/>
-<text x="0" y="0" size="1.27" layer="51" align="center">&gt;NAME</text>
-</package>
-<package name="ONSHORE-OSTTC022162">
-<pad name="1" x="0" y="0" drill="1.3" diameter="2"/>
-<pad name="2" x="5.08" y="0" drill="1.3" diameter="2"/>
-<wire x1="-3.1" y1="4.2" x2="8.18" y2="4.2" width="0.127" layer="51"/>
-<wire x1="8.18" y1="4.2" x2="8.18" y2="-3.3" width="0.127" layer="51"/>
-<wire x1="8.18" y1="-3.3" x2="-3.1" y2="-3.3" width="0.127" layer="51"/>
-<wire x1="-3.1" y1="-3.3" x2="-3.1" y2="4.2" width="0.127" layer="51"/>
-<text x="2.5" y="-2" size="1.27" layer="51" align="center">&gt;NAME</text>
-<wire x1="0" y1="2.5" x2="0.5" y2="3" width="0.127" layer="51"/>
-<wire x1="0" y1="2.5" x2="0" y2="4" width="0.127" layer="51"/>
-<wire x1="0" y1="2.5" x2="-0.5" y2="3" width="0.127" layer="51"/>
-<wire x1="5" y1="2.5" x2="5.5" y2="3" width="0.127" layer="51"/>
-<wire x1="5" y1="2.5" x2="4.5" y2="3" width="0.127" layer="51"/>
-<wire x1="5" y1="2.5" x2="5" y2="4" width="0.127" layer="51"/>
-<wire x1="-3.5" y1="4.5" x2="8.5" y2="4.5" width="0.127" layer="21"/>
-<wire x1="8.5" y1="4.5" x2="8.5" y2="-3.5" width="0.127" layer="21"/>
-<wire x1="8.5" y1="-3.5" x2="-3.5" y2="-3.5" width="0.127" layer="21"/>
-<wire x1="-3.5" y1="-3.5" x2="-3.5" y2="4.5" width="0.127" layer="21"/>
-<wire x1="-1.5" y1="1.5" x2="1.5" y2="1.5" width="0.127" layer="21"/>
-<wire x1="1.5" y1="1.5" x2="1.5" y2="-1.5" width="0.127" layer="21"/>
-<wire x1="1.5" y1="-1.5" x2="-1.5" y2="-1.5" width="0.127" layer="21"/>
-<wire x1="-1.5" y1="-1.5" x2="-1.5" y2="1.5" width="0.127" layer="21"/>
-<text x="-3.5" y="5" size="1.016" layer="25">&gt;NAME</text>
-<text x="-3.5" y="-5" size="1.016" layer="27">&gt;VALUE</text>
-<wire x1="-3.5" y1="4.5" x2="8.5" y2="4.5" width="0.127" layer="39"/>
-<wire x1="8.5" y1="4.5" x2="8.5" y2="-3.5" width="0.127" layer="39"/>
-<wire x1="8.5" y1="-3.5" x2="-3.5" y2="-3.5" width="0.127" layer="39"/>
-<wire x1="-3.5" y1="-3.5" x2="-3.5" y2="4.5" width="0.127" layer="39"/>
+<package name="TERMINAL-2.54-2">
+<pad name="1" x="-1.27" y="0" drill="1"/>
+<pad name="2" x="1.27" y="0" drill="1"/>
+<wire x1="-2.75" y1="3.5" x2="2.75" y2="3.5" width="0.127" layer="21"/>
+<wire x1="2.75" y1="3.5" x2="2.75" y2="2.5" width="0.127" layer="21"/>
+<wire x1="2.75" y1="2.5" x2="2.75" y2="-2.8" width="0.127" layer="21"/>
+<wire x1="2.75" y1="-2.8" x2="-2.75" y2="-2.8" width="0.127" layer="21"/>
+<wire x1="-2.75" y1="-2.8" x2="-2.75" y2="2.5" width="0.127" layer="21"/>
+<wire x1="-2.75" y1="2.5" x2="-2.75" y2="3.5" width="0.127" layer="21"/>
+<wire x1="-2.75" y1="2.5" x2="2.75" y2="2.5" width="0.127" layer="21"/>
+<text x="-3" y="4" size="1.016" layer="25">&gt;NAME</text>
+<text x="-3" y="-4" size="1.016" layer="27">&gt;VALUE</text>
+<rectangle x1="-3" y1="-3" x2="3" y2="4" layer="39"/>
+<wire x1="-2.8" y1="3.5" x2="2.8" y2="3.5" width="0.127" layer="51"/>
+<wire x1="2.8" y1="3.5" x2="2.8" y2="2.5" width="0.127" layer="51"/>
+<wire x1="2.8" y1="2.5" x2="2.8" y2="-2.8" width="0.127" layer="51"/>
+<wire x1="2.8" y1="-2.8" x2="-2.8" y2="-2.8" width="0.127" layer="51"/>
+<wire x1="-2.8" y1="-2.8" x2="-2.8" y2="2.5" width="0.127" layer="51"/>
+<wire x1="-2.8" y1="2.5" x2="-2.8" y2="3.5" width="0.127" layer="51"/>
+<wire x1="-2.8" y1="2.5" x2="2.8" y2="2.5" width="0.127" layer="51"/>
+<text x="0" y="0" size="1.016" layer="51" align="center">&gt;NAME</text>
 </package>
 </packages>
 <symbols>
@@ -999,31 +1001,21 @@ Switches electrical signals</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="TERMINAL-1X02-5.08" prefix="J">
-<description>https://www.digikey.se/product-detail/sv/on-shore-technology-inc/OSTTC022162/ED2609-ND/614558</description>
+<deviceset name="TERMINAL-1X02-2.54">
 <gates>
 <gate name="G$1" symbol="HEADER-1X02" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="TERMINAL-5.08-2P">
+<device name="" package="TERMINAL-2.54-2">
 <connects>
-<connect gate="G$1" pin="1" pad="P$1"/>
-<connect gate="G$1" pin="2" pad="P$2"/>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
 </connects>
 <technologies>
 <technology name=""/>
 </technologies>
 </device>
-<device name="NOSILK" package="TERMINAL-5.08-2P-NO-SILK">
-<connects>
-<connect gate="G$1" pin="1" pad="P$1"/>
-<connect gate="G$1" pin="2" pad="P$2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="OSTTC022162" package="ONSHORE-OSTTC022162">
+<device name="P" package="TERMINAL-2.54-2P">
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>
@@ -1539,12 +1531,12 @@ package type OT</description>
 </classes>
 <parts>
 <part name="FRAME1" library="M2M-Frames" deviceset="FRAME-M2M-A4L" device=""/>
-<part name="U1" library="M2M-Modules" deviceset="ESP32-PICO-MINI-02" device="" value="PICO-MINI-02"/>
+<part name="U1" library="M2M-Modules" deviceset="ESP32-PICO-MINI-02" device="" value="ESP32-PICO-MINI-02"/>
 <part name="Q1" library="M2M-DiscreteSemi" deviceset="MOSFET-NCH" device="SOT23-3" value="AO3400"/>
 <part name="Q2" library="M2M-DiscreteSemi" deviceset="MOSFET-NCH" device="SOT23-3" value="AO3400"/>
 <part name="X1" library="M2M-Connectors" deviceset="HEADER-FTDI232" device="" value="PROG"/>
-<part name="X2" library="M2M-Connectors" deviceset="USB-A" device="SS-52100-001" value="LED1"/>
-<part name="X3" library="M2M-Connectors" deviceset="USB-A" device="SS-52100-001" value="LED2"/>
+<part name="X2" library="M2M-Connectors" deviceset="USB-A" device="SS-52100-001" value="SS-52100-001"/>
+<part name="X3" library="M2M-Connectors" deviceset="USB-A" device="SS-52100-001" value="SS-52100-001"/>
 <part name="C1" library="M2M-Passives" deviceset="CAP" device="C0603" value="100nF"/>
 <part name="R1" library="M2M-Passives" deviceset="RESISTOR" device="0603" value="100R"/>
 <part name="R2" library="M2M-Passives" deviceset="RESISTOR" device="0603" value="100R"/>
@@ -1562,7 +1554,7 @@ package type OT</description>
 <part name="C2" library="M2M-Passives" deviceset="CAP" device="C0603" value="1uF"/>
 <part name="GND10" library="M2M-Power" deviceset="GND" device=""/>
 <part name="SUPPLY6" library="M2M-Power" deviceset="VCC" device=""/>
-<part name="J1" library="M2M-Connectors" deviceset="TERMINAL-1X02-5.08" device="" value="POWER"/>
+<part name="J1" library="M2M-Connectors" deviceset="TERMINAL-1X02-2.54" device="P" value="POWER"/>
 <part name="U2" library="M2M-IC" deviceset="REGULATOR-AP2112K" device="K-SOT23-5" value="AP2112K"/>
 <part name="SUPPLY2" library="M2M-Power" deviceset="VIN" device=""/>
 <part name="SUPPLY7" library="M2M-Power" deviceset="VIN" device=""/>
@@ -1582,8 +1574,8 @@ package type OT</description>
 <part name="R6" library="M2M-Passives" deviceset="RESISTOR" device="0603" value="10K"/>
 <part name="SUPPLY9" library="M2M-Power" deviceset="VCC" device=""/>
 <part name="SUPPLY10" library="M2M-Power" deviceset="VCC" device=""/>
-<part name="F1" library="M2M-Fuse" deviceset="PTC" device="JK-SMD300" value="3A"/>
-<part name="F2" library="M2M-Fuse" deviceset="PTC" device="JK-SMD300" value="3A"/>
+<part name="F1" library="M2M-Fuse" deviceset="PTC" device="JK-SMD300" value="JK-SMD300L-16"/>
+<part name="F2" library="M2M-Fuse" deviceset="PTC" device="JK-SMD300" value="JK-SMD300L-16"/>
 </parts>
 <sheets>
 <sheet>
@@ -1709,11 +1701,11 @@ package type OT</description>
 <instance part="SUPPLY8" gate="G$1" x="71.12" y="154.94" smashed="yes">
 <attribute name="VALUE" x="71.12" y="157.734" size="1.778" layer="96" align="bottom-center"/>
 </instance>
-<instance part="SUPPLY3" gate="G$1" x="193.04" y="147.32" smashed="yes">
-<attribute name="VALUE" x="193.04" y="150.114" size="1.778" layer="96" align="bottom-center"/>
+<instance part="SUPPLY3" gate="G$1" x="182.88" y="147.32" smashed="yes">
+<attribute name="VALUE" x="182.88" y="150.114" size="1.778" layer="96" align="bottom-center"/>
 </instance>
-<instance part="SUPPLY4" gate="G$1" x="193.04" y="91.44" smashed="yes">
-<attribute name="VALUE" x="193.04" y="94.234" size="1.778" layer="96" align="bottom-center"/>
+<instance part="SUPPLY4" gate="G$1" x="182.88" y="91.44" smashed="yes">
+<attribute name="VALUE" x="182.88" y="94.234" size="1.778" layer="96" align="bottom-center"/>
 </instance>
 <instance part="SUPPLY5" gate="G$1" x="58.42" y="121.92" smashed="yes">
 <attribute name="VALUE" x="58.42" y="124.714" size="1.778" layer="96" align="bottom-center"/>
@@ -1746,13 +1738,13 @@ package type OT</description>
 <instance part="SUPPLY10" gate="G$1" x="66.04" y="73.66" smashed="yes">
 <attribute name="VALUE" x="66.04" y="76.454" size="1.778" layer="96" align="bottom-center"/>
 </instance>
-<instance part="F1" gate="G$1" x="200.66" y="142.24" smashed="yes">
-<attribute name="NAME" x="198.12" y="144.526" size="1.778" layer="95"/>
-<attribute name="VALUE" x="198.12" y="138.176" size="1.778" layer="95"/>
+<instance part="F1" gate="G$1" x="190.5" y="142.24" smashed="yes">
+<attribute name="NAME" x="187.96" y="144.526" size="1.778" layer="95"/>
+<attribute name="VALUE" x="187.96" y="138.176" size="1.778" layer="95"/>
 </instance>
-<instance part="F2" gate="G$1" x="200.66" y="86.36" smashed="yes">
-<attribute name="NAME" x="198.12" y="88.646" size="1.778" layer="95"/>
-<attribute name="VALUE" x="198.12" y="82.296" size="1.778" layer="95"/>
+<instance part="F2" gate="G$1" x="190.5" y="86.36" smashed="yes">
+<attribute name="NAME" x="187.96" y="88.646" size="1.778" layer="95"/>
+<attribute name="VALUE" x="187.96" y="82.296" size="1.778" layer="95"/>
 </instance>
 </instances>
 <busses>
@@ -2132,27 +2124,27 @@ package type OT</description>
 <segment>
 <pinref part="SUPPLY3" gate="G$1" pin="VIN"/>
 <pinref part="F1" gate="G$1" pin="1"/>
-<wire x1="193.04" y1="147.32" x2="193.04" y2="142.24" width="0.1524" layer="91"/>
-<wire x1="193.04" y1="142.24" x2="195.58" y2="142.24" width="0.1524" layer="91"/>
+<wire x1="182.88" y1="147.32" x2="182.88" y2="142.24" width="0.1524" layer="91"/>
+<wire x1="182.88" y1="142.24" x2="185.42" y2="142.24" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="SUPPLY4" gate="G$1" pin="VIN"/>
 <pinref part="F2" gate="G$1" pin="1"/>
-<wire x1="193.04" y1="91.44" x2="193.04" y2="86.36" width="0.1524" layer="91"/>
-<wire x1="193.04" y1="86.36" x2="195.58" y2="86.36" width="0.1524" layer="91"/>
+<wire x1="182.88" y1="91.44" x2="182.88" y2="86.36" width="0.1524" layer="91"/>
+<wire x1="182.88" y1="86.36" x2="185.42" y2="86.36" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$5" class="0">
 <segment>
 <pinref part="X2" gate="G$1" pin="UVCC"/>
-<wire x1="208.28" y1="142.24" x2="205.74" y2="142.24" width="0.1524" layer="91"/>
+<wire x1="208.28" y1="142.24" x2="195.58" y2="142.24" width="0.1524" layer="91"/>
 <pinref part="F1" gate="G$1" pin="2"/>
 </segment>
 </net>
 <net name="N$6" class="0">
 <segment>
 <pinref part="X3" gate="G$1" pin="UVCC"/>
-<wire x1="208.28" y1="86.36" x2="205.74" y2="86.36" width="0.1524" layer="91"/>
+<wire x1="208.28" y1="86.36" x2="195.58" y2="86.36" width="0.1524" layer="91"/>
 <pinref part="F2" gate="G$1" pin="2"/>
 </segment>
 </net>

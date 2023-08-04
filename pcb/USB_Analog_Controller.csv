@@ -10,6 +10,6 @@
 "1";"LED1";"USB-ASS-52100-001";"USB-A-SS-52100-001";"X2";"";"";
 "1";"LED2";"USB-ASS-52100-001";"USB-A-SS-52100-001";"X3";"";"";
 "1";"PICO-MINI-02";"ESP32-PICO-MINI-02";"ESP32-PICO-MINI-02";"U1";"";"";
-"1";"POWER";"TERMINAL-1X02-5.08";"TERMINAL-5.08-2P";"J1";"https://www.digikey.se/product-detail/sv/on-shore-technology-inc/OSTTC022162/ED2609-ND/614558";"";
+"1";"POWER";"TERMINAL-1X02-2.54P";"TERMINAL-2.54-2P";"J1";"";"";
 "1";"PROG";"HEADER-FTDI232";"FTDI232-1X06";"X1";"";"";
 "1";"RESET";"HEADER-1X02-2.54";"1X02-2.54";"X6";"";"";
