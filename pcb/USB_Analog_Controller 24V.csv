@@ -15,6 +15,6 @@
 "1";"L2";"XKB-DC-005-5A-2.0";"XKB-DC-005-5A-2.0";"X3";"";"";
 "1";"LGS5145";"LEGEND-SI-LGS5145";"SOT23-6";"U$3";"";"";
 "1";"PMEG6020ER";"DIODE-SCHOTTKYSOD123FL";"SOD-123FL";"D1";"304020028";"";
-"1";"POWER";"TERMINAL-1X02-2.54P";"TERMINAL-2.54-2P";"J1";"";"";
+"1";"POWER";"TERMINAL-1X02-5.08";"TERMINAL-5.08-2P";"J1";"https://www.digikey.se/product-detail/sv/on-shore-technology-inc/OSTTC022162/ED2609-ND/614558";"";
 "1";"PROG";"HEADER-FTDI232";"FTDI232-1X06";"X1";"";"";
 "1";"RESET";"HEADER-1X02-2.54";"1X02-2.54";"X6";"";"";

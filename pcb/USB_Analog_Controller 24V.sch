@@ -973,49 +973,31 @@ Switches electrical signals</description>
 <wire x1="-1.27" y1="-1.27" x2="-1.27" y2="1.27" width="0.127" layer="48"/>
 <text x="-1.016" y="-0.635" size="1.27" layer="48">&gt;NAME</text>
 </package>
-<package name="TERMINAL-2.54-2P">
-<pad name="1" x="-1.27" y="0" drill="1" shape="square"/>
-<pad name="2" x="1.27" y="0" drill="1"/>
-<wire x1="-2.75" y1="3.5" x2="2.75" y2="3.5" width="0.127" layer="21"/>
-<wire x1="2.75" y1="3.5" x2="2.75" y2="2.5" width="0.127" layer="21"/>
-<wire x1="2.75" y1="2.5" x2="2.75" y2="-2.8" width="0.127" layer="21"/>
-<wire x1="2.75" y1="-2.8" x2="-2.75" y2="-2.8" width="0.127" layer="21"/>
-<wire x1="-2.75" y1="-2.8" x2="-2.75" y2="2.5" width="0.127" layer="21"/>
-<wire x1="-2.75" y1="2.5" x2="-2.75" y2="3.5" width="0.127" layer="21"/>
-<wire x1="-2.75" y1="2.5" x2="2.75" y2="2.5" width="0.127" layer="21"/>
-<text x="-3" y="4" size="1.016" layer="25">&gt;NAME</text>
-<text x="-3" y="-4" size="1.016" layer="27">&gt;VALUE</text>
-<rectangle x1="-3" y1="-3" x2="3" y2="4" layer="39"/>
-<wire x1="-2.8" y1="3.5" x2="2.8" y2="3.5" width="0.127" layer="51"/>
-<wire x1="2.8" y1="3.5" x2="2.8" y2="2.5" width="0.127" layer="51"/>
-<wire x1="2.8" y1="2.5" x2="2.8" y2="-2.8" width="0.127" layer="51"/>
-<wire x1="2.8" y1="-2.8" x2="-2.8" y2="-2.8" width="0.127" layer="51"/>
-<wire x1="-2.8" y1="-2.8" x2="-2.8" y2="2.5" width="0.127" layer="51"/>
-<wire x1="-2.8" y1="2.5" x2="-2.8" y2="3.5" width="0.127" layer="51"/>
-<wire x1="-2.8" y1="2.5" x2="2.8" y2="2.5" width="0.127" layer="51"/>
-<text x="0" y="0" size="1.016" layer="51" align="center">&gt;NAME</text>
-</package>
-<package name="TERMINAL-2.54-2">
-<pad name="1" x="-1.27" y="0" drill="1"/>
-<pad name="2" x="1.27" y="0" drill="1"/>
-<wire x1="-2.75" y1="3.5" x2="2.75" y2="3.5" width="0.127" layer="21"/>
-<wire x1="2.75" y1="3.5" x2="2.75" y2="2.5" width="0.127" layer="21"/>
-<wire x1="2.75" y1="2.5" x2="2.75" y2="-2.8" width="0.127" layer="21"/>
-<wire x1="2.75" y1="-2.8" x2="-2.75" y2="-2.8" width="0.127" layer="21"/>
-<wire x1="-2.75" y1="-2.8" x2="-2.75" y2="2.5" width="0.127" layer="21"/>
-<wire x1="-2.75" y1="2.5" x2="-2.75" y2="3.5" width="0.127" layer="21"/>
-<wire x1="-2.75" y1="2.5" x2="2.75" y2="2.5" width="0.127" layer="21"/>
-<text x="-3" y="4" size="1.016" layer="25">&gt;NAME</text>
-<text x="-3" y="-4" size="1.016" layer="27">&gt;VALUE</text>
-<rectangle x1="-3" y1="-3" x2="3" y2="4" layer="39"/>
-<wire x1="-2.8" y1="3.5" x2="2.8" y2="3.5" width="0.127" layer="51"/>
-<wire x1="2.8" y1="3.5" x2="2.8" y2="2.5" width="0.127" layer="51"/>
-<wire x1="2.8" y1="2.5" x2="2.8" y2="-2.8" width="0.127" layer="51"/>
-<wire x1="2.8" y1="-2.8" x2="-2.8" y2="-2.8" width="0.127" layer="51"/>
-<wire x1="-2.8" y1="-2.8" x2="-2.8" y2="2.5" width="0.127" layer="51"/>
-<wire x1="-2.8" y1="2.5" x2="-2.8" y2="3.5" width="0.127" layer="51"/>
-<wire x1="-2.8" y1="2.5" x2="2.8" y2="2.5" width="0.127" layer="51"/>
-<text x="0" y="0" size="1.016" layer="51" align="center">&gt;NAME</text>
+<package name="TERMINAL-5.08-2P">
+<pad name="P$1" x="-2.54" y="0" drill="2"/>
+<pad name="P$2" x="2.54" y="0" drill="2"/>
+<wire x1="-5.08" y1="5.5" x2="5.08" y2="5.5" width="0.127" layer="21"/>
+<wire x1="5.08" y1="5.5" x2="5.08" y2="4.5" width="0.127" layer="21"/>
+<wire x1="5.08" y1="4.5" x2="5.08" y2="-5.5" width="0.127" layer="21"/>
+<wire x1="5.08" y1="-5.5" x2="-5.08" y2="-5.5" width="0.127" layer="21"/>
+<wire x1="-5.08" y1="-5.5" x2="-5.08" y2="4.5" width="0.127" layer="21"/>
+<wire x1="-5.08" y1="4.5" x2="-5.08" y2="5.5" width="0.127" layer="21"/>
+<wire x1="-5.08" y1="4.5" x2="5.08" y2="4.5" width="0.127" layer="21"/>
+<text x="-5" y="-7" size="1.27" layer="25">&gt;NAME</text>
+<text x="-5" y="6" size="1.27" layer="27">&gt;VALUE</text>
+<wire x1="-5" y1="5.5" x2="-5" y2="4.5" width="0.127" layer="51"/>
+<wire x1="-5" y1="4.5" x2="-5" y2="-5.5" width="0.127" layer="51"/>
+<wire x1="-5" y1="-5.5" x2="5" y2="-5.5" width="0.127" layer="51"/>
+<wire x1="5" y1="-5.5" x2="5" y2="4.5" width="0.127" layer="51"/>
+<wire x1="5" y1="4.5" x2="5" y2="5.5" width="0.127" layer="51"/>
+<wire x1="5" y1="5.5" x2="-5" y2="5.5" width="0.127" layer="51"/>
+<wire x1="-5" y1="4.5" x2="5" y2="4.5" width="0.127" layer="51"/>
+<text x="0" y="-3.5" size="1.27" layer="51" align="center">&gt;NAME</text>
+<circle x="-2.5" y="0" radius="1.5" width="0.127" layer="51"/>
+<circle x="2.5" y="0" radius="1.5" width="0.127" layer="51"/>
+<rectangle x1="-5.5" y1="-6" x2="5.5" y2="6" layer="39"/>
+<wire x1="-4" y1="0" x2="-1" y2="0" width="0.127" layer="51"/>
+<wire x1="1" y1="0" x2="4" y2="0" width="0.127" layer="51"/>
 </package>
 <package name="XKB-DC-005-5A-2.0">
 <pad name="2" x="-2.9" y="0" drill="1" diameter="2.2" shape="long" rot="R270"/>
@@ -1044,6 +1026,40 @@ Switches electrical signals</description>
 <text x="3" y="5" size="1.27" layer="27" align="bottom-right">&gt;VALUE</text>
 <rectangle x1="-11" y1="-6.5" x2="5" y2="5" layer="39"/>
 <text x="-9" y="0" size="1.27" layer="48" rot="R90" align="center">&gt;NAME</text>
+</package>
+<package name="TERMINAL-5.08-2P-NO-SILK">
+<pad name="P$1" x="-2.54" y="0" drill="2"/>
+<pad name="P$2" x="2.54" y="0" drill="2"/>
+<text x="0" y="0" size="1.27" layer="51" align="center">&gt;NAME</text>
+</package>
+<package name="ONSHORE-OSTTC022162">
+<pad name="1" x="0" y="0" drill="1.3" diameter="2"/>
+<pad name="2" x="5.08" y="0" drill="1.3" diameter="2"/>
+<wire x1="-3.1" y1="4.2" x2="8.18" y2="4.2" width="0.127" layer="51"/>
+<wire x1="8.18" y1="4.2" x2="8.18" y2="-3.3" width="0.127" layer="51"/>
+<wire x1="8.18" y1="-3.3" x2="-3.1" y2="-3.3" width="0.127" layer="51"/>
+<wire x1="-3.1" y1="-3.3" x2="-3.1" y2="4.2" width="0.127" layer="51"/>
+<text x="2.5" y="-2" size="1.27" layer="51" align="center">&gt;NAME</text>
+<wire x1="0" y1="2.5" x2="0.5" y2="3" width="0.127" layer="51"/>
+<wire x1="0" y1="2.5" x2="0" y2="4" width="0.127" layer="51"/>
+<wire x1="0" y1="2.5" x2="-0.5" y2="3" width="0.127" layer="51"/>
+<wire x1="5" y1="2.5" x2="5.5" y2="3" width="0.127" layer="51"/>
+<wire x1="5" y1="2.5" x2="4.5" y2="3" width="0.127" layer="51"/>
+<wire x1="5" y1="2.5" x2="5" y2="4" width="0.127" layer="51"/>
+<wire x1="-3.5" y1="4.5" x2="8.5" y2="4.5" width="0.127" layer="21"/>
+<wire x1="8.5" y1="4.5" x2="8.5" y2="-3.5" width="0.127" layer="21"/>
+<wire x1="8.5" y1="-3.5" x2="-3.5" y2="-3.5" width="0.127" layer="21"/>
+<wire x1="-3.5" y1="-3.5" x2="-3.5" y2="4.5" width="0.127" layer="21"/>
+<wire x1="-1.5" y1="1.5" x2="1.5" y2="1.5" width="0.127" layer="21"/>
+<wire x1="1.5" y1="1.5" x2="1.5" y2="-1.5" width="0.127" layer="21"/>
+<wire x1="1.5" y1="-1.5" x2="-1.5" y2="-1.5" width="0.127" layer="21"/>
+<wire x1="-1.5" y1="-1.5" x2="-1.5" y2="1.5" width="0.127" layer="21"/>
+<text x="-3.5" y="5" size="1.016" layer="25">&gt;NAME</text>
+<text x="-3.5" y="-5" size="1.016" layer="27">&gt;VALUE</text>
+<wire x1="-3.5" y1="4.5" x2="8.5" y2="4.5" width="0.127" layer="39"/>
+<wire x1="8.5" y1="4.5" x2="8.5" y2="-3.5" width="0.127" layer="39"/>
+<wire x1="8.5" y1="-3.5" x2="-3.5" y2="-3.5" width="0.127" layer="39"/>
+<wire x1="-3.5" y1="-3.5" x2="-3.5" y2="4.5" width="0.127" layer="39"/>
 </package>
 </packages>
 <symbols>
@@ -1155,21 +1171,31 @@ Switches electrical signals</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="TERMINAL-1X02-2.54">
+<deviceset name="TERMINAL-1X02-5.08" prefix="J">
+<description>https://www.digikey.se/product-detail/sv/on-shore-technology-inc/OSTTC022162/ED2609-ND/614558</description>
 <gates>
 <gate name="G$1" symbol="HEADER-1X02" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="TERMINAL-2.54-2">
+<device name="" package="TERMINAL-5.08-2P">
 <connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="G$1" pin="1" pad="P$1"/>
+<connect gate="G$1" pin="2" pad="P$2"/>
 </connects>
 <technologies>
 <technology name=""/>
 </technologies>
 </device>
-<device name="P" package="TERMINAL-2.54-2P">
+<device name="NOSILK" package="TERMINAL-5.08-2P-NO-SILK">
+<connects>
+<connect gate="G$1" pin="1" pad="P$1"/>
+<connect gate="G$1" pin="2" pad="P$2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="OSTTC022162" package="ONSHORE-OSTTC022162">
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>
@@ -1746,7 +1772,7 @@ Switches electrical signals</description>
 <part name="GND9" library="M2M-Power" deviceset="GND" device=""/>
 <part name="GND10" library="M2M-Power" deviceset="GND" device=""/>
 <part name="SUPPLY6" library="M2M-Power" deviceset="VCC" device=""/>
-<part name="J1" library="M2M-Connectors" deviceset="TERMINAL-1X02-2.54" device="P" value="POWER"/>
+<part name="J1" library="M2M-Connectors" deviceset="TERMINAL-1X02-5.08" device="" value="POWER"/>
 <part name="SUPPLY2" library="M2M-Power" deviceset="VIN" device=""/>
 <part name="SUPPLY3" library="M2M-Power" deviceset="VIN" device=""/>
 <part name="SUPPLY4" library="M2M-Power" deviceset="VIN" device=""/>
