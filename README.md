@@ -1,4 +1,4 @@
-# LED_USB_Analog_Controller
+# Analog_LED_Controller
 
 This repository contains 2 version of a two channel analog LED controller. One is for 5V USB connected lights, and the other is for 5-24V lights using standard 5.5/2.1 mm power jacks. They are based on an ESP32-PICO-MINI-2 module, and I use it with ESPHome firmware to publish the lights to Home Assistant. Inside of Home Assistant you can dim the lights and turn them on or off.
 
