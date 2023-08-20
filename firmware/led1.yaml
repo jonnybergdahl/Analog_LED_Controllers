@@ -1,45 +1,76 @@
+# ===================================================================
+# ESPHome firmware for the analog LED controller. Works with both the 
+# USB and the power jack version
+#
+# https://github.com/jonnybergdahl/Analog_LED_Controllers
+#
+# NOTE: This yaml Requires that you have the following setup in your 
+# secrets.yaml file:
+#
+#  - api_key
+#  - ota_password
+# - wifi_ssid
+# - wifi_password
+# - ap_password
+#
+# ===================================================================
+#
+# Change name and friendly_name as needed.
+#
 esphome:
-    name: led1
-    friendly_name: LED1
-  
+  name: led1
+  friendly_name: LED1
+
+# ===================================================================
+#
+# No need to change anything below, just basic ESPHome setup
+#
 esp32:
-  board: esp32dev
-  framework:
-    type: arduino
+board: esp32dev
+framework:
+  type: arduino
 
 logger:
 
 api:
-  encryption:
-    key: !secret api_key
+encryption:
+  key: !secret api_key
 
 ota:
-  password: !secret ota_password
+password: !secret ota_password
 
 wifi:
-  ssid: !secret wifi_ssid
-  password: !secret wifi_password
+ssid: !secret wifi_ssid
+password: !secret wifi_password
 
-  ap:
-    ssid: $friendly_name Fallback Hotspot
-    password: !secret ap_password
+ap:
+  ssid: $friendly_name Fallback Hotspot
+  password: !secret ap_password
 
 captive_portal:
 
+# ===================================================================
+#
+# Board specific setup
+#
+# Setup PWM on IO32 and IO33 using the LEDC platform
 output:
-  - platform: ledc
-    pin: GPIO32
-    id: pwm1
-    frequency: 2441Hz
-  - platform: ledc
-    pin: GPIO33
-    id: pwm2
-    frequency: 2441Hz
+- platform: ledc
+  pin: GPIO32
+  id: pwm1
+  frequency: 2441Hz
+- platform: ledc
+  pin: GPIO33
+  id: pwm2
+  frequency: 2441Hz
 
+#
+# Publish as lights in HA using the monochromatic platform
+#
 light:
-  - platform: monochromatic
-    output: pwm1
-    name: "USB 1"
-  - platform: monochromatic
-    output: pwm2
-    name: "USB 2"    
+- platform: monochromatic
+  output: pwm1
+  name: "Output 1"
+- platform: monochromatic
+  output: pwm2
+  name: "Output 2"    
