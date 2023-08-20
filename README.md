@@ -1,8 +1,8 @@
-# Analog_LED_Controller
+# Analog LED Controllers
 
 This repository contains 2 version of a two channel analog LED controller. One is for 5V USB connected lights, and the other is for 5-24V lights using standard 5.5/2.1 mm power jacks. They are based on an ESP32-PICO-MINI-2 module, and I use it with ESPHome firmware to publish the lights to Home Assistant. Inside of Home Assistant you can dim the lights and turn them on or off.
 
-> Note: The 24V version is work in progress!
+> Note: The 24V version is still work in progress!
 
 ![USB Device](assets/IMG_2712.jpeg)
 
@@ -24,7 +24,7 @@ I highly recommend you order a stencil together with the PCB, as the ESP32 modul
 ### Power jack version
 ![Power Jack version PCB](assets/pcb24v.png)
 
-See the [BOM file](pcb/LED_USB_Analog_Controller.csv) for the component list.
+See the [USB version BOM file](pcb/5V_Analog_Controller.csv) and [Power Jack version BOM file](pcb/12V_Analog_Controller.csv) for the component list.
 
 The enclosure files are located in the [enclosure folder](enclosure/). There are two `3mf` files for 3D printing for each device, and I also added the original _Fusion 360_ design files in case you need to make modifications.
 
