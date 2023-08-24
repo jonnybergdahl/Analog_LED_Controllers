@@ -1,10 +1,16 @@
 # Analog_LED_Controller
 
-This repository contains 2 version of a two channel analog LED controller. One is for 5V USB connected lights, and the other is for 5-24V lights using standard 5.5/2.1 mm power jacks. They are based on an ESP32-PICO-MINI-2 module, and I use it with ESPHome firmware to publish the lights to Home Assistant. Inside of Home Assistant you can dim the lights and turn them on or off.
+This repository contains 2 version of a two channel analog LED controller. One is for 5V USB connected lights, the "USB version", and the other is for 5-24V lights, the "Power jack version" using standard 5.5/2.1 mm power jacks with center pin positive. They are based on an ESP32-PICO-MINI-2 module, and I use it with ESPHome firmware to publish the lights to Home Assistant. Inside of Home Assistant you can dim the lights and turn them on or off. Both have a power jack input for power. 
 
-> Note: The 24V version is work in progress!
+### USB version
+![USB version](assets/IMG_2712.jpeg)
 
-![USB Device](assets/IMG_2712.jpeg)
+### Power jack version
+![Power jack version](assets/IMG_2745.jpeg)
+
+The gerber files for PCB manufacturing are located in the [gerber folder](gerber/).
+
+I highly recommend you order a stencil together with the PCB, as the ESP32 module only exposes tiny pads on the bottom of the module and it is hard to get the correct amount of solder paste without one.
 
 PCB design files are available in [EAGLE format](pcb/).
 
@@ -12,11 +18,9 @@ The Schematic is also available in PDF Format, [USB version](pcb/USB_Analog_Cont
 
 ## Parts needed
 
-BOM file are located here: [USB version](pcb/USB_Analog_Controller.csv), [Power jack version](pcb/USB_Analog_Controller%2024V.csv).
-
-The gerber files for PCB manufacturing are located in the [gerber folder](gerber/).
-
-I highly recommend you order a stencil together with the PCB, as the ESP32 module only exposes tiny pads on the bottom of the module and it is hard to get the correct amount of solder paste without one.
+BOM file are located here: 
+ - [USB version](pcb/USB_Analog_Controller.csv)
+ - [Power jack version](pcb/USB_Analog_Controller%2024V.csv).
 
 ### USB version
 ![USB version PCB](assets/pcb5v.png)
@@ -25,6 +29,8 @@ I highly recommend you order a stencil together with the PCB, as the ESP32 modul
 ![Power Jack version PCB](assets/pcb24v.png)
 
 See the [BOM file](pcb/LED_USB_Analog_Controller.csv) for the component list.
+
+> Note: Enclosure files are work in progress, they presently lack the power connector cutout.
 
 The enclosure files are located in the [enclosure folder](enclosure/). There are two `3mf` files for 3D printing for each device, and I also added the original _Fusion 360_ design files in case you need to make modifications.
 

@@ -825,49 +825,33 @@ Switches electrical signals</description>
 <wire x1="-1.27" y1="-1.27" x2="-1.27" y2="1.27" width="0.127" layer="48"/>
 <text x="-1.016" y="-0.635" size="1.27" layer="48">&gt;NAME</text>
 </package>
-<package name="TERMINAL-2.54-2P">
-<pad name="1" x="-1.27" y="0" drill="1" shape="square"/>
-<pad name="2" x="1.27" y="0" drill="1"/>
-<wire x1="-2.75" y1="3.5" x2="2.75" y2="3.5" width="0.127" layer="21"/>
-<wire x1="2.75" y1="3.5" x2="2.75" y2="2.5" width="0.127" layer="21"/>
-<wire x1="2.75" y1="2.5" x2="2.75" y2="-2.8" width="0.127" layer="21"/>
-<wire x1="2.75" y1="-2.8" x2="-2.75" y2="-2.8" width="0.127" layer="21"/>
-<wire x1="-2.75" y1="-2.8" x2="-2.75" y2="2.5" width="0.127" layer="21"/>
-<wire x1="-2.75" y1="2.5" x2="-2.75" y2="3.5" width="0.127" layer="21"/>
-<wire x1="-2.75" y1="2.5" x2="2.75" y2="2.5" width="0.127" layer="21"/>
-<text x="-3" y="4" size="1.016" layer="25">&gt;NAME</text>
-<text x="-3" y="-4" size="1.016" layer="27">&gt;VALUE</text>
-<rectangle x1="-3" y1="-3" x2="3" y2="4" layer="39"/>
-<wire x1="-2.8" y1="3.5" x2="2.8" y2="3.5" width="0.127" layer="51"/>
-<wire x1="2.8" y1="3.5" x2="2.8" y2="2.5" width="0.127" layer="51"/>
-<wire x1="2.8" y1="2.5" x2="2.8" y2="-2.8" width="0.127" layer="51"/>
-<wire x1="2.8" y1="-2.8" x2="-2.8" y2="-2.8" width="0.127" layer="51"/>
-<wire x1="-2.8" y1="-2.8" x2="-2.8" y2="2.5" width="0.127" layer="51"/>
-<wire x1="-2.8" y1="2.5" x2="-2.8" y2="3.5" width="0.127" layer="51"/>
-<wire x1="-2.8" y1="2.5" x2="2.8" y2="2.5" width="0.127" layer="51"/>
-<text x="0" y="0" size="1.016" layer="51" align="center">&gt;NAME</text>
-</package>
-<package name="TERMINAL-2.54-2">
-<pad name="1" x="-1.27" y="0" drill="1"/>
-<pad name="2" x="1.27" y="0" drill="1"/>
-<wire x1="-2.75" y1="3.5" x2="2.75" y2="3.5" width="0.127" layer="21"/>
-<wire x1="2.75" y1="3.5" x2="2.75" y2="2.5" width="0.127" layer="21"/>
-<wire x1="2.75" y1="2.5" x2="2.75" y2="-2.8" width="0.127" layer="21"/>
-<wire x1="2.75" y1="-2.8" x2="-2.75" y2="-2.8" width="0.127" layer="21"/>
-<wire x1="-2.75" y1="-2.8" x2="-2.75" y2="2.5" width="0.127" layer="21"/>
-<wire x1="-2.75" y1="2.5" x2="-2.75" y2="3.5" width="0.127" layer="21"/>
-<wire x1="-2.75" y1="2.5" x2="2.75" y2="2.5" width="0.127" layer="21"/>
-<text x="-3" y="4" size="1.016" layer="25">&gt;NAME</text>
-<text x="-3" y="-4" size="1.016" layer="27">&gt;VALUE</text>
-<rectangle x1="-3" y1="-3" x2="3" y2="4" layer="39"/>
-<wire x1="-2.8" y1="3.5" x2="2.8" y2="3.5" width="0.127" layer="51"/>
-<wire x1="2.8" y1="3.5" x2="2.8" y2="2.5" width="0.127" layer="51"/>
-<wire x1="2.8" y1="2.5" x2="2.8" y2="-2.8" width="0.127" layer="51"/>
-<wire x1="2.8" y1="-2.8" x2="-2.8" y2="-2.8" width="0.127" layer="51"/>
-<wire x1="-2.8" y1="-2.8" x2="-2.8" y2="2.5" width="0.127" layer="51"/>
-<wire x1="-2.8" y1="2.5" x2="-2.8" y2="3.5" width="0.127" layer="51"/>
-<wire x1="-2.8" y1="2.5" x2="2.8" y2="2.5" width="0.127" layer="51"/>
-<text x="0" y="0" size="1.016" layer="51" align="center">&gt;NAME</text>
+<package name="XKB-DC-005-5A-2.0">
+<pad name="2" x="-2.9" y="0" drill="1" diameter="2.2" shape="long" rot="R270"/>
+<wire x1="-1.75" y1="-4.2" x2="1.75" y2="-4.2" width="0.127" layer="46"/>
+<wire x1="1.75" y1="-4.2" x2="1.75" y2="-5.2" width="0.127" layer="46"/>
+<wire x1="1.75" y1="-5.2" x2="-1.75" y2="-5.2" width="0.127" layer="46"/>
+<wire x1="-1.75" y1="-5.2" x2="-1.75" y2="-4.2" width="0.127" layer="46"/>
+<pad name="1" x="3" y="0" drill="1" diameter="2.2" shape="long" rot="R270"/>
+<pad name="3" x="0" y="-4.7" drill="1" diameter="2.2" shape="long"/>
+<wire x1="-10.6" y1="4.5" x2="-7.2" y2="4.5" width="0.127" layer="48"/>
+<wire x1="-7.2" y1="4.5" x2="3" y2="4.5" width="0.127" layer="48"/>
+<wire x1="3" y1="4.5" x2="3" y2="-4.5" width="0.127" layer="48"/>
+<wire x1="3" y1="-4.5" x2="-7.2" y2="-4.5" width="0.127" layer="48"/>
+<wire x1="-7.2" y1="-4.5" x2="-10.6" y2="-4.5" width="0.127" layer="48"/>
+<wire x1="-10.6" y1="-4.5" x2="-10.6" y2="4.5" width="0.127" layer="48"/>
+<wire x1="-7.2" y1="4.5" x2="-7.2" y2="-4.5" width="0.127" layer="48"/>
+<wire x1="2.5" y1="1.75" x2="3.5" y2="1.75" width="0.127" layer="46"/>
+<wire x1="3.5" y1="1.75" x2="3.5" y2="-1.75" width="0.127" layer="46"/>
+<wire x1="3.5" y1="-1.75" x2="2.5" y2="-1.75" width="0.127" layer="46"/>
+<wire x1="2.5" y1="-1.75" x2="2.5" y2="1.75" width="0.127" layer="46"/>
+<wire x1="-3.4" y1="1.75" x2="-3.4" y2="-1.75" width="0.127" layer="46"/>
+<wire x1="-3.4" y1="-1.75" x2="-2.4" y2="-1.75" width="0.127" layer="46"/>
+<wire x1="-2.4" y1="-1.75" x2="-2.4" y2="1.75" width="0.127" layer="46"/>
+<wire x1="-2.4" y1="1.75" x2="-3.4" y2="1.75" width="0.127" layer="46"/>
+<text x="5.5" y="-4.5" size="1.27" layer="21" rot="R90">&gt;NAME</text>
+<text x="3" y="5" size="1.27" layer="27" align="bottom-right">&gt;VALUE</text>
+<rectangle x1="-11" y1="-6.5" x2="5" y2="5" layer="39"/>
+<text x="-9" y="0" size="1.27" layer="48" rot="R90" align="center">&gt;NAME</text>
 </package>
 </packages>
 <symbols>
@@ -899,6 +883,32 @@ Switches electrical signals</description>
 <text x="-10.16" y="8.382" size="1.778" layer="95">&gt;NAME</text>
 <text x="-10.16" y="-7.62" size="1.778" layer="96">&gt;VALUE</text>
 <text x="-10.16" y="-7.62" size="1.778" layer="96">&gt;VALUE</text>
+</symbol>
+<symbol name="PWR-JACK-SW">
+<pin name="1" x="10.16" y="2.54" length="middle" rot="R180"/>
+<pin name="3" x="10.16" y="0" length="middle" rot="R180"/>
+<pin name="2" x="10.16" y="-2.54" length="middle" rot="R180"/>
+<wire x1="5.08" y1="-2.54" x2="0" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="0" y1="-2.54" x2="-2.54" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="-2.54" x2="-3.81" y2="-1.27" width="0.254" layer="94"/>
+<wire x1="-3.81" y1="-1.27" x2="-5.08" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="0" y1="0" x2="5.08" y2="0" width="0.254" layer="94"/>
+<wire x1="0" y1="-2.54" x2="0.508" y2="-1.016" width="0.254" layer="94"/>
+<wire x1="0.508" y1="-1.016" x2="0" y2="-1.016" width="0.254" layer="94"/>
+<wire x1="0" y1="-1.016" x2="-0.508" y2="-1.016" width="0.254" layer="94"/>
+<wire x1="-0.508" y1="-1.016" x2="0" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="0" y1="0" x2="0" y2="-1.016" width="0.254" layer="94"/>
+<wire x1="5.08" y1="3.81" x2="4.064" y2="3.81" width="0.254" layer="94"/>
+<wire x1="4.064" y1="3.81" x2="4.064" y2="3.556" width="0.254" layer="94"/>
+<wire x1="4.064" y1="3.556" x2="4.064" y2="1.524" width="0.254" layer="94"/>
+<wire x1="4.064" y1="1.524" x2="4.064" y2="1.27" width="0.254" layer="94"/>
+<wire x1="5.08" y1="3.81" x2="5.08" y2="1.27" width="0.254" layer="94"/>
+<wire x1="5.08" y1="1.27" x2="4.064" y2="1.27" width="0.254" layer="94"/>
+<wire x1="4.064" y1="3.556" x2="-5.334" y2="3.556" width="0.254" layer="94"/>
+<wire x1="4.064" y1="1.524" x2="-5.334" y2="1.524" width="0.254" layer="94"/>
+<wire x1="-5.334" y1="1.524" x2="-5.334" y2="3.556" width="0.254" layer="94" curve="-180"/>
+<text x="-5.08" y="5.08" size="1.778" layer="95">&gt;NAME</text>
+<text x="-5.08" y="-5.08" size="1.778" layer="96">&gt;VALUE</text>
 </symbol>
 <symbol name="HEADER-1X02">
 <pin name="1" x="-5.08" y="2.54" visible="pin" length="middle" direction="pas"/>
@@ -1001,24 +1011,16 @@ Switches electrical signals</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="TERMINAL-1X02-2.54">
+<deviceset name="XKB-DC-005-5A-2.0" prefix="X" uservalue="yes">
 <gates>
-<gate name="G$1" symbol="HEADER-1X02" x="0" y="0"/>
+<gate name="G$1" symbol="PWR-JACK-SW" x="-2.54" y="0"/>
 </gates>
 <devices>
-<device name="" package="TERMINAL-2.54-2">
+<device name="" package="XKB-DC-005-5A-2.0">
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="P" package="TERMINAL-2.54-2P">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="G$1" pin="3" pad="3"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -1554,7 +1556,7 @@ package type OT</description>
 <part name="C2" library="M2M-Passives" deviceset="CAP" device="C0603" value="1uF"/>
 <part name="GND10" library="M2M-Power" deviceset="GND" device=""/>
 <part name="SUPPLY6" library="M2M-Power" deviceset="VCC" device=""/>
-<part name="J1" library="M2M-Connectors" deviceset="TERMINAL-1X02-2.54" device="P" value="POWER"/>
+<part name="J1" library="M2M-Connectors" deviceset="XKB-DC-005-5A-2.0" device="" value="POWER"/>
 <part name="U2" library="M2M-IC" deviceset="REGULATOR-AP2112K" device="K-SOT23-5" value="AP2112K"/>
 <part name="SUPPLY2" library="M2M-Power" deviceset="VIN" device=""/>
 <part name="SUPPLY7" library="M2M-Power" deviceset="VIN" device=""/>
@@ -1670,9 +1672,9 @@ package type OT</description>
 <instance part="SUPPLY6" gate="G$1" x="160.02" y="157.48" smashed="yes">
 <attribute name="VALUE" x="160.02" y="160.274" size="1.778" layer="96" align="bottom-center"/>
 </instance>
-<instance part="J1" gate="G$1" x="43.18" y="111.76" smashed="yes" rot="MR0">
-<attribute name="VALUE" x="45.72" y="106.68" size="1.778" layer="96" rot="MR0"/>
-<attribute name="NAME" x="45.72" y="117.602" size="1.778" layer="95" rot="MR0"/>
+<instance part="J1" gate="G$1" x="35.56" y="111.76" smashed="yes">
+<attribute name="VALUE" x="33.02" y="106.68" size="1.778" layer="96"/>
+<attribute name="NAME" x="33.02" y="117.602" size="1.778" layer="95"/>
 </instance>
 <instance part="U2" gate="G$1" x="50.8" y="147.32" smashed="yes">
 <attribute name="NAME" x="40.64" y="152.908" size="1.778" layer="95"/>
@@ -1942,8 +1944,8 @@ package type OT</description>
 </segment>
 <segment>
 <pinref part="GND6" gate="1" pin="GND"/>
-<wire x1="48.26" y1="111.76" x2="50.8" y2="111.76" width="0.1524" layer="91"/>
-<wire x1="50.8" y1="111.76" x2="50.8" y2="104.14" width="0.1524" layer="91"/>
+<wire x1="45.72" y1="109.22" x2="50.8" y2="109.22" width="0.1524" layer="91"/>
+<wire x1="50.8" y1="109.22" x2="50.8" y2="104.14" width="0.1524" layer="91"/>
 <pinref part="J1" gate="G$1" pin="2"/>
 </segment>
 <segment>
@@ -2097,7 +2099,7 @@ package type OT</description>
 </net>
 <net name="VIN" class="0">
 <segment>
-<wire x1="48.26" y1="114.3" x2="50.8" y2="114.3" width="0.1524" layer="91"/>
+<wire x1="45.72" y1="114.3" x2="50.8" y2="114.3" width="0.1524" layer="91"/>
 <wire x1="50.8" y1="114.3" x2="50.8" y2="121.92" width="0.1524" layer="91"/>
 <pinref part="J1" gate="G$1" pin="1"/>
 <pinref part="SUPPLY2" gate="G$1" pin="VIN"/>
