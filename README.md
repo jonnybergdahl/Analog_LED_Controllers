@@ -36,7 +36,7 @@ BOM file are located here:
 
 See the [BOM file](pcb/LED_USB_Analog_Controller.csv) for the component list.
 
-> Note: Enclosure files are work in progress, they presently lack the power connector cutout.
+## Enclosure
 
 The enclosure files are located in the [enclosure folder](enclosure/). There are two `3mf` files for 3D printing for each device, and I also added the original _Fusion 360_ design files in case you need to make modifications.
 
