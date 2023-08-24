@@ -702,15 +702,15 @@ DIN A4, landscape with location and doc. field</description>
 <wire x1="1.925" y1="0.31" x2="1.925" y2="-0.31" width="0.127" layer="51"/>
 <wire x1="1.925" y1="-0.31" x2="1.5" y2="-0.31" width="0.127" layer="51"/>
 <text x="0" y="0" size="0.8128" layer="51" align="center">&gt;NAME</text>
-<wire x1="-1.5" y1="0.5" x2="-1.5" y2="1" width="0.127" layer="22"/>
-<wire x1="-1.5" y1="1" x2="-1" y2="1" width="0.127" layer="22"/>
-<wire x1="-1" y1="1" x2="1.5" y2="1" width="0.127" layer="22"/>
-<wire x1="1.5" y1="1" x2="1.5" y2="0.5" width="0.127" layer="22"/>
-<wire x1="-1.5" y1="-0.5" x2="-1.5" y2="-1" width="0.127" layer="22"/>
-<wire x1="-1.5" y1="-1" x2="-1" y2="-1" width="0.127" layer="22"/>
-<wire x1="-1" y1="-1" x2="1.5" y2="-1" width="0.127" layer="22"/>
-<wire x1="1.5" y1="-1" x2="1.5" y2="-0.5" width="0.127" layer="22"/>
-<wire x1="-1" y1="1" x2="-1" y2="-1" width="0.127" layer="22"/>
+<wire x1="-1.5" y1="0.5" x2="-1.5" y2="1" width="0.127" layer="21"/>
+<wire x1="-1.5" y1="1" x2="-1" y2="1" width="0.127" layer="21"/>
+<wire x1="-1" y1="1" x2="1.5" y2="1" width="0.127" layer="21"/>
+<wire x1="1.5" y1="1" x2="1.5" y2="0.5" width="0.127" layer="21"/>
+<wire x1="-1.5" y1="-0.5" x2="-1.5" y2="-1" width="0.127" layer="21"/>
+<wire x1="-1.5" y1="-1" x2="-1" y2="-1" width="0.127" layer="21"/>
+<wire x1="-1" y1="-1" x2="1.5" y2="-1" width="0.127" layer="21"/>
+<wire x1="1.5" y1="-1" x2="1.5" y2="-0.5" width="0.127" layer="21"/>
+<wire x1="-1" y1="1" x2="-1" y2="-1" width="0.127" layer="21"/>
 <wire x1="-1" y1="0.85" x2="-1" y2="-0.85" width="0.127" layer="51"/>
 <text x="-1.5" y="1.3" size="1.016" layer="21">&gt;NAME</text>
 <text x="-1.5" y="-2.3" size="1.016" layer="27">&gt;VALUE</text>
@@ -1450,6 +1450,13 @@ Switches electrical signals</description>
 <pin name="VIN" x="0" y="0" visible="off" length="short" direction="sup" rot="R90"/>
 <text x="0" y="2.794" size="1.778" layer="96" align="bottom-center">&gt;VALUE</text>
 </symbol>
+<symbol name="VSW">
+<description>&lt;h3&gt;VCC Voltage Supply&lt;/h3&gt;</description>
+<wire x1="0.762" y1="1.27" x2="0" y2="2.54" width="0.254" layer="94"/>
+<wire x1="0" y1="2.54" x2="-0.762" y2="1.27" width="0.254" layer="94"/>
+<pin name="VSW" x="0" y="0" visible="off" length="short" direction="sup" rot="R90"/>
+<text x="0" y="2.794" size="1.778" layer="96" align="bottom-center">&gt;VALUE</text>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="VCC" prefix="SUPPLY">
@@ -1483,6 +1490,18 @@ Switches electrical signals</description>
 <deviceset name="VIN" prefix="SUPPLY">
 <gates>
 <gate name="G$1" symbol="VIN" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="VSW" prefix="SUPPLY">
+<gates>
+<gate name="G$1" symbol="VSW" x="0" y="0"/>
 </gates>
 <devices>
 <device name="">
@@ -1679,8 +1698,6 @@ Switches electrical signals</description>
 <part name="SUPPLY6" library="M2M-Power" deviceset="VCC" device=""/>
 <part name="J1" library="M2M-Connectors" deviceset="XKB-DC-005-5A-2.0" device="" value="POWER"/>
 <part name="SUPPLY2" library="M2M-Power" deviceset="VIN" device=""/>
-<part name="SUPPLY3" library="M2M-Power" deviceset="VIN" device=""/>
-<part name="SUPPLY4" library="M2M-Power" deviceset="VIN" device=""/>
 <part name="R3" library="M2M-Passives" deviceset="RESISTOR" device="0603" value="10K"/>
 <part name="R4" library="M2M-Passives" deviceset="RESISTOR" device="0603" value="10K"/>
 <part name="GND12" library="M2M-Power" deviceset="GND" device=""/>
@@ -1709,6 +1726,10 @@ Switches electrical signals</description>
 <part name="C5" library="M2M-Passives" deviceset="CAP" device="C0603" value="47pF"/>
 <part name="X2" library="M2M-Connectors" deviceset="XKB-DC-005-5A-2.0" device="" value="L1"/>
 <part name="X3" library="M2M-Connectors" deviceset="XKB-DC-005-5A-2.0" device="" value="L2"/>
+<part name="D2" library="M2M-DiscreteSemi" deviceset="DIODE-SCHOTTKY" device="SOD-123" value="B5819LW"/>
+<part name="SUPPLY8" library="M2M-Power" deviceset="VSW" device=""/>
+<part name="SUPPLY11" library="M2M-Power" deviceset="VSW" device=""/>
+<part name="SUPPLY12" library="M2M-Power" deviceset="VSW" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -1763,8 +1784,8 @@ Switches electrical signals</description>
 <instance part="GND5" gate="1" x="152.4" y="55.88" smashed="yes">
 <attribute name="VALUE" x="152.4" y="55.626" size="1.778" layer="96" align="top-center"/>
 </instance>
-<instance part="GND6" gate="1" x="35.56" y="15.24" smashed="yes">
-<attribute name="VALUE" x="35.56" y="14.986" size="1.778" layer="96" align="top-center"/>
+<instance part="GND6" gate="1" x="55.88" y="15.24" smashed="yes">
+<attribute name="VALUE" x="55.88" y="14.986" size="1.778" layer="96" align="top-center"/>
 </instance>
 <instance part="X5" gate="G$1" x="43.18" y="55.88" smashed="yes">
 <attribute name="VALUE" x="40.64" y="50.8" size="1.778" layer="96"/>
@@ -1786,18 +1807,12 @@ Switches electrical signals</description>
 <instance part="SUPPLY6" gate="G$1" x="165.1" y="152.4" smashed="yes">
 <attribute name="VALUE" x="165.1" y="155.194" size="1.778" layer="96" align="bottom-center"/>
 </instance>
-<instance part="J1" gate="G$1" x="48.26" y="27.94" smashed="yes" rot="MR0">
-<attribute name="VALUE" x="50.8" y="22.86" size="1.778" layer="96" rot="MR0"/>
-<attribute name="NAME" x="50.8" y="33.782" size="1.778" layer="95" rot="MR0"/>
+<instance part="J1" gate="G$1" x="30.48" y="27.94" smashed="yes">
+<attribute name="VALUE" x="27.94" y="22.86" size="1.778" layer="96"/>
+<attribute name="NAME" x="27.94" y="33.782" size="1.778" layer="95"/>
 </instance>
-<instance part="SUPPLY2" gate="G$1" x="35.56" y="35.56" smashed="yes">
-<attribute name="VALUE" x="35.56" y="38.354" size="1.778" layer="96" align="bottom-center"/>
-</instance>
-<instance part="SUPPLY3" gate="G$1" x="195.58" y="152.4" smashed="yes">
-<attribute name="VALUE" x="195.58" y="155.194" size="1.778" layer="96" align="bottom-center"/>
-</instance>
-<instance part="SUPPLY4" gate="G$1" x="195.58" y="96.52" smashed="yes">
-<attribute name="VALUE" x="195.58" y="99.314" size="1.778" layer="96" align="bottom-center"/>
+<instance part="SUPPLY2" gate="G$1" x="55.88" y="35.56" smashed="yes">
+<attribute name="VALUE" x="55.88" y="38.354" size="1.778" layer="96" align="bottom-center"/>
 </instance>
 <instance part="R3" gate="G$1" x="208.28" y="119.38" smashed="yes" rot="R90">
 <attribute name="NAME" x="206.7814" y="116.84" size="1.778" layer="95" rot="R90"/>
@@ -1839,8 +1854,8 @@ Switches electrical signals</description>
 <attribute name="NAME" x="30.48" y="150.622" size="1.778" layer="95"/>
 <attribute name="VALUE" x="30.48" y="132.08" size="1.778" layer="96"/>
 </instance>
-<instance part="SUPPLY5" gate="G$1" x="12.7" y="154.94" smashed="yes">
-<attribute name="VALUE" x="12.7" y="157.734" size="1.778" layer="96" align="bottom-center"/>
+<instance part="SUPPLY5" gate="G$1" x="12.7" y="160.02" smashed="yes">
+<attribute name="VALUE" x="12.7" y="162.814" size="1.778" layer="96" align="bottom-center"/>
 </instance>
 <instance part="GND4" gate="1" x="12.7" y="109.22" smashed="yes">
 <attribute name="VALUE" x="12.7" y="108.966" size="1.778" layer="96" align="top-center"/>
@@ -1894,6 +1909,19 @@ Switches electrical signals</description>
 </instance>
 <instance part="X2" gate="G$1" x="238.76" y="144.78" smashed="yes" rot="MR0"/>
 <instance part="X3" gate="G$1" x="238.76" y="88.9" smashed="yes" rot="MR0"/>
+<instance part="D2" gate="G$1" x="48.26" y="30.48" smashed="yes" rot="MR180">
+<attribute name="NAME" x="44.45" y="28.702" size="1.778" layer="95" rot="MR180"/>
+<attribute name="VALUE" x="44.45" y="34.036" size="1.778" layer="96" rot="MR180"/>
+</instance>
+<instance part="SUPPLY8" gate="G$1" x="195.58" y="152.4" smashed="yes">
+<attribute name="VALUE" x="195.58" y="155.194" size="1.778" layer="96" align="bottom-center"/>
+</instance>
+<instance part="SUPPLY11" gate="G$1" x="195.58" y="96.52" smashed="yes">
+<attribute name="VALUE" x="195.58" y="99.314" size="1.778" layer="96" align="bottom-center"/>
+</instance>
+<instance part="SUPPLY12" gate="G$1" x="43.18" y="35.56" smashed="yes">
+<attribute name="VALUE" x="43.18" y="38.354" size="1.778" layer="96" align="bottom-center"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -2085,8 +2113,8 @@ Switches electrical signals</description>
 </segment>
 <segment>
 <pinref part="GND6" gate="1" pin="GND"/>
-<wire x1="38.1" y1="25.4" x2="35.56" y2="25.4" width="0.1524" layer="91"/>
-<wire x1="35.56" y1="25.4" x2="35.56" y2="17.78" width="0.1524" layer="91"/>
+<wire x1="40.64" y1="25.4" x2="55.88" y2="25.4" width="0.1524" layer="91"/>
+<wire x1="55.88" y1="25.4" x2="55.88" y2="17.78" width="0.1524" layer="91"/>
 <pinref part="J1" gate="G$1" pin="2"/>
 </segment>
 <segment>
@@ -2274,27 +2302,15 @@ Switches electrical signals</description>
 </net>
 <net name="VIN" class="0">
 <segment>
-<wire x1="38.1" y1="30.48" x2="35.56" y2="30.48" width="0.1524" layer="91"/>
-<wire x1="35.56" y1="30.48" x2="35.56" y2="35.56" width="0.1524" layer="91"/>
-<pinref part="J1" gate="G$1" pin="1"/>
+<wire x1="55.88" y1="30.48" x2="55.88" y2="35.56" width="0.1524" layer="91"/>
 <pinref part="SUPPLY2" gate="G$1" pin="VIN"/>
-</segment>
-<segment>
-<pinref part="SUPPLY3" gate="G$1" pin="VIN"/>
-<pinref part="F1" gate="G$1" pin="1"/>
-<wire x1="195.58" y1="152.4" x2="195.58" y2="147.32" width="0.1524" layer="91"/>
-<wire x1="195.58" y1="147.32" x2="198.12" y2="147.32" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="SUPPLY4" gate="G$1" pin="VIN"/>
-<pinref part="F2" gate="G$1" pin="1"/>
-<wire x1="195.58" y1="96.52" x2="195.58" y2="91.44" width="0.1524" layer="91"/>
-<wire x1="195.58" y1="91.44" x2="198.12" y2="91.44" width="0.1524" layer="91"/>
+<pinref part="D2" gate="G$1" pin="C"/>
+<wire x1="50.8" y1="30.48" x2="55.88" y2="30.48" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="SUPPLY5" gate="G$1" pin="VIN"/>
 <pinref part="C2" gate="G$1" pin="1"/>
-<wire x1="12.7" y1="154.94" x2="12.7" y2="147.32" width="0.1524" layer="91"/>
+<wire x1="12.7" y1="160.02" x2="12.7" y2="147.32" width="0.1524" layer="91"/>
 <pinref part="U$3" gate="G$1" pin="VIN"/>
 <wire x1="12.7" y1="147.32" x2="12.7" y2="144.78" width="0.1524" layer="91"/>
 <wire x1="25.4" y1="147.32" x2="22.86" y2="147.32" width="0.1524" layer="91"/>
@@ -2358,6 +2374,29 @@ Switches electrical signals</description>
 <pinref part="C5" gate="G$1" pin="2"/>
 <wire x1="81.28" y1="129.54" x2="81.28" y2="127" width="0.1524" layer="91"/>
 <wire x1="81.28" y1="127" x2="73.66" y2="127" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="VSW" class="0">
+<segment>
+<pinref part="J1" gate="G$1" pin="1"/>
+<pinref part="D2" gate="G$1" pin="A"/>
+<wire x1="40.64" y1="30.48" x2="43.18" y2="30.48" width="0.1524" layer="91"/>
+<pinref part="SUPPLY12" gate="G$1" pin="VSW"/>
+<wire x1="43.18" y1="30.48" x2="45.72" y2="30.48" width="0.1524" layer="91"/>
+<wire x1="43.18" y1="35.56" x2="43.18" y2="30.48" width="0.1524" layer="91"/>
+<junction x="43.18" y="30.48"/>
+</segment>
+<segment>
+<pinref part="F1" gate="G$1" pin="1"/>
+<wire x1="195.58" y1="152.4" x2="195.58" y2="147.32" width="0.1524" layer="91"/>
+<wire x1="195.58" y1="147.32" x2="198.12" y2="147.32" width="0.1524" layer="91"/>
+<pinref part="SUPPLY8" gate="G$1" pin="VSW"/>
+</segment>
+<segment>
+<pinref part="F2" gate="G$1" pin="1"/>
+<wire x1="195.58" y1="96.52" x2="195.58" y2="91.44" width="0.1524" layer="91"/>
+<wire x1="195.58" y1="91.44" x2="198.12" y2="91.44" width="0.1524" layer="91"/>
+<pinref part="SUPPLY11" gate="G$1" pin="VSW"/>
 </segment>
 </net>
 </nets>

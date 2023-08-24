@@ -1,6 +1,12 @@
 # Analog_LED_Controller
 
-This repository contains 2 version of a two channel analog LED controller. One is for 5V USB connected lights, the "USB version", and the other is for 5-24V lights, the "Power jack version" using standard 5.5/2.1 mm power jacks with center pin positive. They are based on an ESP32-PICO-MINI-2 module, and I use it with ESPHome firmware to publish the lights to Home Assistant. Inside of Home Assistant you can dim the lights and turn them on or off. Both have a power jack input for power. 
+This repository contains 2 versions of a two channel analog LED controller. 
+
+> Note: This is only suitable for LED lights powered by a fixed voltage such as LED strips. It does not work with raw LED's, those need a constant current or voltage driver. 
+
+One version is for 5V USB connected lights, the "USB version", and the other version is for 5-24V lights, the "Power jack version" using standard 5.5/2.1 mm power jacks. They are based on an ESP32-PICO-MINI-2 module, and I use it with ESPHome firmware to publish the lights to Home Assistant. Inside of Home Assistant you can dim the lights and turn them on or off. Both have a power jack input for power, make sure to use a power supply with center positive.
+
+> Note: The boards have reverse power input protection for the internal circuitry only. The LED's outputs are protected by resettable fuses. This should not pose any problems as long as you only power LED's, since they are themselves diodes and thus already protected from reverse power.
 
 ### USB version
 ![USB version](assets/IMG_2712.jpeg)
