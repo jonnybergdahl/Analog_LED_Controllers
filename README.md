@@ -2,11 +2,16 @@
 
 This repository contains 2 versions of a two channel analog LED controller. 
 
-> Note: This is only suitable for LED lights powered by a fixed voltage such as LED strips. It does not work with raw LED's, those need a constant current or voltage driver. 
+> Note: This is only suitable for LED lights powered by a fixed voltage, such as plant lights and LED strips. It does not work with raw LED's that need a constant current/voltage driver. 
 
 One version is for 5V USB connected lights, the "USB version", and the other version is for 5-24V lights, the "Power jack version" using standard 5.5/2.1 mm power jacks. They are based on an ESP32-PICO-MINI-2 module, and I use it with ESPHome firmware to publish the lights to Home Assistant. Inside of Home Assistant you can dim the lights and turn them on or off. Both have a power jack input for power, make sure to use a power supply with center positive.
 
 > Note: The boards have reverse power input protection for the internal circuitry only. The LED's outputs are protected by resettable fuses. This should not pose any problems as long as you only power LED's, since they are themselves diodes and thus already protected from reverse power.
+
+The input power jack is rated for maximum 5A so depending on input voltage the max combined power is:
+ - 5V: 25W
+ - 12V: 60W
+ - 24V: 120W
 
 ### USB version
 ![USB version](assets/IMG_2712.jpeg)
@@ -28,7 +33,7 @@ BOM file are located here:
  - [USB version](pcb/USB_Analog_Controller.csv)
  - [Power jack version](pcb/USB_Analog_Controller%2024V.csv).
 
-> Note: There is space for 2 PTC's per channel in case you need more current than a single PTC can handle. Since PTC's raise their resistance when gatting hotter, putting them in parallell is fully functional as opposed to normal fuses.
+> Note: There is space for 2 PTC's per channel in case you need more current than a single PTC can handle. Make sure to use PTC's rated for the voltage _and_ current you want. The JK-SMD300L-24 in the BOM are rated for max 24V and a hold current of 3 ampere.
 
 ### USB version
 ![USB version PCB](assets/pcb5v.png)
