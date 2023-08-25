@@ -1730,6 +1730,8 @@ Switches electrical signals</description>
 <part name="SUPPLY8" library="M2M-Power" deviceset="VSW" device=""/>
 <part name="SUPPLY11" library="M2M-Power" deviceset="VSW" device=""/>
 <part name="SUPPLY12" library="M2M-Power" deviceset="VSW" device=""/>
+<part name="F3" library="M2M-Fuse" deviceset="PTC" device="JK-SMD300" value="JK-SMD300L-24"/>
+<part name="F4" library="M2M-Fuse" deviceset="PTC" device="JK-SMD300" value="JK-SMD300L-24"/>
 </parts>
 <sheets>
 <sheet>
@@ -1842,13 +1844,13 @@ Switches electrical signals</description>
 <instance part="SUPPLY10" gate="G$1" x="66.04" y="73.66" smashed="yes">
 <attribute name="VALUE" x="66.04" y="76.454" size="1.778" layer="96" align="bottom-center"/>
 </instance>
-<instance part="F1" gate="G$1" x="203.2" y="147.32" smashed="yes">
-<attribute name="NAME" x="200.66" y="149.606" size="1.778" layer="95"/>
-<attribute name="VALUE" x="200.66" y="143.256" size="1.778" layer="95"/>
+<instance part="F1" gate="G$1" x="195.58" y="147.32" smashed="yes">
+<attribute name="NAME" x="193.04" y="149.606" size="1.778" layer="95"/>
+<attribute name="VALUE" x="193.04" y="143.256" size="1.778" layer="95"/>
 </instance>
-<instance part="F2" gate="G$1" x="203.2" y="91.44" smashed="yes">
-<attribute name="NAME" x="200.66" y="93.726" size="1.778" layer="95"/>
-<attribute name="VALUE" x="200.66" y="87.376" size="1.778" layer="95"/>
+<instance part="F2" gate="G$1" x="198.12" y="91.44" smashed="yes">
+<attribute name="NAME" x="195.58" y="93.726" size="1.778" layer="95"/>
+<attribute name="VALUE" x="195.58" y="87.376" size="1.778" layer="95"/>
 </instance>
 <instance part="U$3" gate="G$1" x="38.1" y="142.24" smashed="yes">
 <attribute name="NAME" x="30.48" y="150.622" size="1.778" layer="95"/>
@@ -1913,14 +1915,22 @@ Switches electrical signals</description>
 <attribute name="NAME" x="44.45" y="28.702" size="1.778" layer="95" rot="MR180"/>
 <attribute name="VALUE" x="44.45" y="34.036" size="1.778" layer="96" rot="MR180"/>
 </instance>
-<instance part="SUPPLY8" gate="G$1" x="195.58" y="152.4" smashed="yes">
-<attribute name="VALUE" x="195.58" y="155.194" size="1.778" layer="96" align="bottom-center"/>
+<instance part="SUPPLY8" gate="G$1" x="187.96" y="160.02" smashed="yes">
+<attribute name="VALUE" x="187.96" y="162.814" size="1.778" layer="96" align="bottom-center"/>
 </instance>
-<instance part="SUPPLY11" gate="G$1" x="195.58" y="96.52" smashed="yes">
-<attribute name="VALUE" x="195.58" y="99.314" size="1.778" layer="96" align="bottom-center"/>
+<instance part="SUPPLY11" gate="G$1" x="190.5" y="104.14" smashed="yes">
+<attribute name="VALUE" x="190.5" y="106.934" size="1.778" layer="96" align="bottom-center"/>
 </instance>
 <instance part="SUPPLY12" gate="G$1" x="43.18" y="35.56" smashed="yes">
 <attribute name="VALUE" x="43.18" y="38.354" size="1.778" layer="96" align="bottom-center"/>
+</instance>
+<instance part="F3" gate="G$1" x="195.58" y="157.48" smashed="yes">
+<attribute name="NAME" x="193.04" y="159.766" size="1.778" layer="95"/>
+<attribute name="VALUE" x="193.04" y="153.416" size="1.778" layer="95"/>
+</instance>
+<instance part="F4" gate="G$1" x="198.12" y="101.6" smashed="yes">
+<attribute name="NAME" x="195.58" y="103.886" size="1.778" layer="95"/>
+<attribute name="VALUE" x="195.58" y="97.536" size="1.778" layer="95"/>
 </instance>
 </instances>
 <busses>
@@ -2324,16 +2334,26 @@ Switches electrical signals</description>
 </net>
 <net name="N$5" class="0">
 <segment>
-<wire x1="228.6" y1="147.32" x2="208.28" y2="147.32" width="0.1524" layer="91"/>
+<wire x1="228.6" y1="147.32" x2="213.36" y2="147.32" width="0.1524" layer="91"/>
 <pinref part="F1" gate="G$1" pin="2"/>
 <pinref part="X2" gate="G$1" pin="1"/>
+<pinref part="F3" gate="G$1" pin="2"/>
+<wire x1="213.36" y1="147.32" x2="200.66" y2="147.32" width="0.1524" layer="91"/>
+<wire x1="200.66" y1="157.48" x2="213.36" y2="157.48" width="0.1524" layer="91"/>
+<wire x1="213.36" y1="157.48" x2="213.36" y2="147.32" width="0.1524" layer="91"/>
+<junction x="213.36" y="147.32"/>
 </segment>
 </net>
 <net name="N$6" class="0">
 <segment>
-<wire x1="228.6" y1="91.44" x2="208.28" y2="91.44" width="0.1524" layer="91"/>
+<wire x1="228.6" y1="91.44" x2="215.9" y2="91.44" width="0.1524" layer="91"/>
 <pinref part="F2" gate="G$1" pin="2"/>
 <pinref part="X3" gate="G$1" pin="1"/>
+<pinref part="F4" gate="G$1" pin="2"/>
+<wire x1="215.9" y1="91.44" x2="203.2" y2="91.44" width="0.1524" layer="91"/>
+<wire x1="203.2" y1="101.6" x2="215.9" y2="101.6" width="0.1524" layer="91"/>
+<wire x1="215.9" y1="101.6" x2="215.9" y2="91.44" width="0.1524" layer="91"/>
+<junction x="215.9" y="91.44"/>
 </segment>
 </net>
 <net name="N$7" class="0">
@@ -2388,15 +2408,23 @@ Switches electrical signals</description>
 </segment>
 <segment>
 <pinref part="F1" gate="G$1" pin="1"/>
-<wire x1="195.58" y1="152.4" x2="195.58" y2="147.32" width="0.1524" layer="91"/>
-<wire x1="195.58" y1="147.32" x2="198.12" y2="147.32" width="0.1524" layer="91"/>
+<wire x1="187.96" y1="160.02" x2="187.96" y2="157.48" width="0.1524" layer="91"/>
+<wire x1="187.96" y1="157.48" x2="187.96" y2="147.32" width="0.1524" layer="91"/>
+<wire x1="187.96" y1="147.32" x2="190.5" y2="147.32" width="0.1524" layer="91"/>
 <pinref part="SUPPLY8" gate="G$1" pin="VSW"/>
+<pinref part="F3" gate="G$1" pin="1"/>
+<wire x1="190.5" y1="157.48" x2="187.96" y2="157.48" width="0.1524" layer="91"/>
+<junction x="187.96" y="157.48"/>
 </segment>
 <segment>
 <pinref part="F2" gate="G$1" pin="1"/>
-<wire x1="195.58" y1="96.52" x2="195.58" y2="91.44" width="0.1524" layer="91"/>
-<wire x1="195.58" y1="91.44" x2="198.12" y2="91.44" width="0.1524" layer="91"/>
+<wire x1="190.5" y1="104.14" x2="190.5" y2="101.6" width="0.1524" layer="91"/>
+<wire x1="190.5" y1="101.6" x2="190.5" y2="91.44" width="0.1524" layer="91"/>
+<wire x1="190.5" y1="91.44" x2="193.04" y2="91.44" width="0.1524" layer="91"/>
 <pinref part="SUPPLY11" gate="G$1" pin="VSW"/>
+<pinref part="F4" gate="G$1" pin="1"/>
+<wire x1="193.04" y1="101.6" x2="190.5" y2="101.6" width="0.1524" layer="91"/>
+<junction x="190.5" y="101.6"/>
 </segment>
 </net>
 </nets>

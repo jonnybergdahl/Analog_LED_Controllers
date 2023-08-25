@@ -1805,6 +1805,8 @@ package type OT</description>
 <part name="SUPPLY3" library="M2M-Power" deviceset="VSW" device=""/>
 <part name="SUPPLY4" library="M2M-Power" deviceset="VSW" device=""/>
 <part name="SUPPLY11" library="M2M-Power" deviceset="VSW" device=""/>
+<part name="F3" library="M2M-Fuse" deviceset="PTC" device="JK-SMD300" value="JK-SMD300L-16"/>
+<part name="F4" library="M2M-Fuse" deviceset="PTC" device="JK-SMD300" value="JK-SMD300L-16"/>
 </parts>
 <sheets>
 <sheet>
@@ -1961,13 +1963,13 @@ package type OT</description>
 <instance part="SUPPLY10" gate="G$1" x="66.04" y="73.66" smashed="yes">
 <attribute name="VALUE" x="66.04" y="76.454" size="1.778" layer="96" align="bottom-center"/>
 </instance>
-<instance part="F1" gate="G$1" x="190.5" y="142.24" smashed="yes">
-<attribute name="NAME" x="187.96" y="144.526" size="1.778" layer="95"/>
-<attribute name="VALUE" x="187.96" y="138.176" size="1.778" layer="95"/>
+<instance part="F1" gate="G$1" x="187.96" y="142.24" smashed="yes">
+<attribute name="NAME" x="185.42" y="144.526" size="1.778" layer="95"/>
+<attribute name="VALUE" x="185.42" y="138.176" size="1.778" layer="95"/>
 </instance>
-<instance part="F2" gate="G$1" x="190.5" y="86.36" smashed="yes">
-<attribute name="NAME" x="187.96" y="88.646" size="1.778" layer="95"/>
-<attribute name="VALUE" x="187.96" y="82.296" size="1.778" layer="95"/>
+<instance part="F2" gate="G$1" x="187.96" y="86.36" smashed="yes">
+<attribute name="NAME" x="185.42" y="88.646" size="1.778" layer="95"/>
+<attribute name="VALUE" x="185.42" y="82.296" size="1.778" layer="95"/>
 </instance>
 <instance part="D1" gate="G$1" x="40.64" y="114.3" smashed="yes">
 <attribute name="NAME" x="36.83" y="116.078" size="1.778" layer="95"/>
@@ -1976,11 +1978,19 @@ package type OT</description>
 <instance part="SUPPLY3" gate="G$1" x="33.02" y="121.92" smashed="yes">
 <attribute name="VALUE" x="33.02" y="124.714" size="1.778" layer="96" align="bottom-center"/>
 </instance>
-<instance part="SUPPLY4" gate="G$1" x="182.88" y="147.32" smashed="yes">
-<attribute name="VALUE" x="182.88" y="150.114" size="1.778" layer="96" align="bottom-center"/>
+<instance part="SUPPLY4" gate="G$1" x="180.34" y="152.4" smashed="yes">
+<attribute name="VALUE" x="180.34" y="155.194" size="1.778" layer="96" align="bottom-center"/>
 </instance>
-<instance part="SUPPLY11" gate="G$1" x="182.88" y="91.44" smashed="yes">
-<attribute name="VALUE" x="182.88" y="94.234" size="1.778" layer="96" align="bottom-center"/>
+<instance part="SUPPLY11" gate="G$1" x="180.34" y="96.52" smashed="yes">
+<attribute name="VALUE" x="180.34" y="99.314" size="1.778" layer="96" align="bottom-center"/>
+</instance>
+<instance part="F3" gate="G$1" x="187.96" y="149.86" smashed="yes">
+<attribute name="NAME" x="185.42" y="152.146" size="1.778" layer="95"/>
+<attribute name="VALUE" x="185.42" y="145.796" size="1.778" layer="95"/>
+</instance>
+<instance part="F4" gate="G$1" x="187.96" y="93.98" smashed="yes">
+<attribute name="NAME" x="185.42" y="96.266" size="1.778" layer="95"/>
+<attribute name="VALUE" x="185.42" y="89.916" size="1.778" layer="95"/>
 </instance>
 </instances>
 <busses>
@@ -2361,29 +2371,47 @@ package type OT</description>
 <net name="N$5" class="0">
 <segment>
 <pinref part="X2" gate="G$1" pin="UVCC"/>
-<wire x1="208.28" y1="142.24" x2="195.58" y2="142.24" width="0.1524" layer="91"/>
+<wire x1="208.28" y1="142.24" x2="205.74" y2="142.24" width="0.1524" layer="91"/>
 <pinref part="F1" gate="G$1" pin="2"/>
+<pinref part="F3" gate="G$1" pin="2"/>
+<wire x1="205.74" y1="142.24" x2="193.04" y2="142.24" width="0.1524" layer="91"/>
+<wire x1="193.04" y1="149.86" x2="205.74" y2="149.86" width="0.1524" layer="91"/>
+<wire x1="205.74" y1="149.86" x2="205.74" y2="142.24" width="0.1524" layer="91"/>
+<junction x="205.74" y="142.24"/>
 </segment>
 </net>
 <net name="N$6" class="0">
 <segment>
 <pinref part="X3" gate="G$1" pin="UVCC"/>
-<wire x1="208.28" y1="86.36" x2="195.58" y2="86.36" width="0.1524" layer="91"/>
+<wire x1="208.28" y1="86.36" x2="205.74" y2="86.36" width="0.1524" layer="91"/>
 <pinref part="F2" gate="G$1" pin="2"/>
+<pinref part="F4" gate="G$1" pin="2"/>
+<wire x1="205.74" y1="86.36" x2="193.04" y2="86.36" width="0.1524" layer="91"/>
+<wire x1="193.04" y1="93.98" x2="205.74" y2="93.98" width="0.1524" layer="91"/>
+<wire x1="205.74" y1="93.98" x2="205.74" y2="86.36" width="0.1524" layer="91"/>
+<junction x="205.74" y="86.36"/>
 </segment>
 </net>
 <net name="VSW" class="0">
 <segment>
 <pinref part="F1" gate="G$1" pin="1"/>
-<wire x1="182.88" y1="147.32" x2="182.88" y2="142.24" width="0.1524" layer="91"/>
-<wire x1="182.88" y1="142.24" x2="185.42" y2="142.24" width="0.1524" layer="91"/>
+<wire x1="180.34" y1="152.4" x2="180.34" y2="149.86" width="0.1524" layer="91"/>
+<wire x1="180.34" y1="149.86" x2="180.34" y2="142.24" width="0.1524" layer="91"/>
+<wire x1="180.34" y1="142.24" x2="182.88" y2="142.24" width="0.1524" layer="91"/>
 <pinref part="SUPPLY4" gate="G$1" pin="VSW"/>
+<pinref part="F3" gate="G$1" pin="1"/>
+<wire x1="180.34" y1="149.86" x2="182.88" y2="149.86" width="0.1524" layer="91"/>
+<junction x="180.34" y="149.86"/>
 </segment>
 <segment>
 <pinref part="F2" gate="G$1" pin="1"/>
-<wire x1="182.88" y1="91.44" x2="182.88" y2="86.36" width="0.1524" layer="91"/>
-<wire x1="182.88" y1="86.36" x2="185.42" y2="86.36" width="0.1524" layer="91"/>
+<wire x1="180.34" y1="96.52" x2="180.34" y2="93.98" width="0.1524" layer="91"/>
+<wire x1="180.34" y1="93.98" x2="180.34" y2="86.36" width="0.1524" layer="91"/>
+<wire x1="180.34" y1="86.36" x2="182.88" y2="86.36" width="0.1524" layer="91"/>
 <pinref part="SUPPLY11" gate="G$1" pin="VSW"/>
+<pinref part="F4" gate="G$1" pin="1"/>
+<wire x1="180.34" y1="93.98" x2="182.88" y2="93.98" width="0.1524" layer="91"/>
+<junction x="180.34" y="93.98"/>
 </segment>
 <segment>
 <pinref part="SUPPLY3" gate="G$1" pin="VSW"/>
