@@ -28,6 +28,8 @@ BOM file are located here:
  - [USB version](pcb/USB_Analog_Controller.csv)
  - [Power jack version](pcb/USB_Analog_Controller%2024V.csv).
 
+> Note: There is space for 2 PTC's per channel in case you need more current than a single PTC can handle. Since PTC's raise their resistance when gatting hotter, putting them in parallell is fully functional as opposed to normal fuses.
+
 ### USB version
 ![USB version PCB](assets/pcb5v.png)
 
