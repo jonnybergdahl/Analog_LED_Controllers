@@ -25,7 +25,7 @@ I highly recommend you order a stencil together with the PCB, as the ESP32 modul
 
 PCB design files are available in [EAGLE format](pcb/).
 
-The Schematic is also available in PDF Format, [USB version](pcb/USB_Analog_Controller.pdf) and [Power jack version](pcb/USB_Analog_Controller%2024V.pdf).
+The Schematic is also available in PDF Format, [USB version](https://github.com/jonnybergdahl/Project_Analog_LED_Controllers/blob/main/pcb/5V_Analog_Controller.pdf) and [Power jack version](https://github.com/jonnybergdahl/Project_Analog_LED_Controllers/blob/main/pcb/12V_Analog_Controller.pdf).
 
 ## Parts needed
 
